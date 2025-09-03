@@ -775,7 +775,8 @@ $font-sizes: (
 $headings-margin-bottom:      0 !default; // submate修改清除預設標題元素標籤下方空間margin-bottom
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
+// $headings-font-weight:        500 !default; // 預設h字重
+$headings-font-weight:        600 !default; // submate自訂h字重600
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 // scss-docs-end headings-variables

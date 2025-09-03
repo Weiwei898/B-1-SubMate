@@ -100,7 +100,7 @@
   $h6-font-size:                $font-size-base !default; // 16px
   $h7-font-size:                $font-size-base * 0.875 !default; // 14px
 
-  ex. fz-
+  ex. fs-
   1: $h1-font-size,
   2: $h2-font-size,
   3: $h3-font-size,
