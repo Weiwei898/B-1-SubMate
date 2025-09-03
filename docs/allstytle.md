@@ -79,7 +79,7 @@
   $box-shadow:                  0 0 1rem rgba(#000000, .12) !default;  // submate自訂box陰影
   $card-box-shadow:                   0 0 1rem rgba(#000000, .12) !default; // submate自訂卡片陰影 同box-shadow
 
-  /字重沒改參考預設 ex. fw-bold
+  // 字重沒改參考預設 ex. fw-bold
   $font-weight-lighter:         lighter !default;
   $font-weight-light:           300 !default;
   $font-weight-normal:          400 !default;
