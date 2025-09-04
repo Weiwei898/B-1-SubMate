@@ -1,6 +1,6 @@
 # 通用樣式表
 
-  //submate放置自定義的顏色樣式 primary secondary natural
+  //submate放置自定義的顏色樣式 primary secondary neutral
   "primary-50": $primary-50,
   "primary-100": $primary-100,
   "primary-200": $primary-200,
@@ -25,23 +25,23 @@
   "secondary-900": $secondary-900,
   "secondary-950": $secondary-950,
 
-  "natural-0": $natural-0,
-  "natural-50": $natural-50,
-  "natural-100": $natural-100,
-  "natural-200": $natural-200,
-  "natural-300": $natural-300,
-  "natural-400": $natural-400,
-  "natural-500": $natural-500,
-  "natural-600": $natural-600,
-  "natural-700": $natural-700,
-  "natural-800": $natural-800,
-  "natural-900": $natural-900,
-  "natural-950": $natural-950,
+  "neutral-0": $neutral-0,
+  "neutral-50": $neutral-50,
+  "neutral-100": $neutral-100,
+  "neutral-200": $neutral-200,
+  "neutral-300": $neutral-300,
+  "neutral-400": $neutral-400,
+  "neutral-500": $neutral-500,
+  "neutral-600": $neutral-600,
+  "neutral-700": $neutral-700,
+  "neutral-800": $neutral-800,
+  "neutral-900": $neutral-900,
+  "neutral-950": $neutral-950,
 
   // submate自訂color
   $primary: $primary-600;
   $secondary: $secondary-500;
-  $black: $natural-950;
+  $black: $neutral-950;
   $dark: $black;
   $white:#FFFFFF;
   $light: $white;

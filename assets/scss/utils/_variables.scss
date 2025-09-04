@@ -6,21 +6,21 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-// submate自訂通用樣式中性色natural
-$natural-0:#FFFFFF;
-$natural-50:#F6F6F6;
-$natural-100:#E7E7E7;
-$natural-200:#D1D1D1;
-$natural-300:#B0B0B0;
-$natural-400:#888888;
-$natural-500:#6D6D6D;
-$natural-600:#5D5D5D;
-$natural-700:#4F4F4F;
-$natural-800:#454545;
-$natural-900:#3D3D3D;
-$natural-950:#121212;
+// submate自訂通用樣式中性色neutral
+$neutral-0:#FFFFFF;
+$neutral-50:#F6F6F6;
+$neutral-100:#E7E7E7;
+$neutral-200:#D1D1D1;
+$neutral-300:#B0B0B0;
+$neutral-400:#888888;
+$neutral-500:#6D6D6D;
+$neutral-600:#5D5D5D;
+$neutral-700:#4F4F4F;
+$neutral-800:#454545;
+$neutral-900:#3D3D3D;
+$neutral-950:#121212;
 
-$black: $natural-950;
+$black: $neutral-950;
 $dark: $black;
 $white:#FFFFFF;
 $light: $white;
@@ -357,7 +357,7 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  //submate放置自定義的顏色樣式 primary secondary natural
+  //submate放置自定義的顏色樣式 primary secondary neutral
   "primary-50": $primary-50,
   "primary-100": $primary-100,
   "primary-200": $primary-200,
@@ -382,18 +382,18 @@ $theme-colors: (
   "secondary-900": $secondary-900,
   "secondary-950": $secondary-950,
 
-  "natural-0": $natural-0,
-  "natural-50": $natural-50,
-  "natural-100": $natural-100,
-  "natural-200": $natural-200,
-  "natural-300": $natural-300,
-  "natural-400": $natural-400,
-  "natural-500": $natural-500,
-  "natural-600": $natural-600,
-  "natural-700": $natural-700,
-  "natural-800": $natural-800,
-  "natural-900": $natural-900,
-  "natural-950": $natural-950,
+  "neutral-0": $neutral-0,
+  "neutral-50": $neutral-50,
+  "neutral-100": $neutral-100,
+  "neutral-200": $neutral-200,
+  "neutral-300": $neutral-300,
+  "neutral-400": $neutral-400,
+  "neutral-500": $neutral-500,
+  "neutral-600": $neutral-600,
+  "neutral-700": $neutral-700,
+  "neutral-800": $neutral-800,
+  "neutral-900": $neutral-900,
+  "neutral-950": $neutral-950,
 
 
   "primary":    $primary,
@@ -1379,7 +1379,7 @@ $dropdown-divider-margin-y:         $spacer * .5 !default;
 $dropdown-box-shadow:               var(--#{$prefix}box-shadow) !default;
 
 $dropdown-link-color:               var(--#{$prefix}body-color) !default;
-$dropdown-link-hover-color:         $dropdown-link-color !default; // 預設選單hover 字顏色 自訂選單hover 字顏色 $natural-10 = $dropdown-link-color = body-color = black =  $natural-10 
+$dropdown-link-hover-color:         $dropdown-link-color !default; // 預設選單hover 字顏色 自訂選單hover 字顏色 $neutral-10 = $dropdown-link-color = body-color = black =  $neutral-10 
 $dropdown-link-hover-color:         $dropdown-link-color !default;
 $dropdown-link-hover-bg:            var(--#{$prefix}tertiary-bg) !default; // 預設選單hover 背景顏色
 
