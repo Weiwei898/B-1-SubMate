@@ -1,5 +1,11 @@
 # 通用樣式表
 
+  // Submate自定義線性漸變色 text- bg- border-
+  "gradient-01": $gradient-01,
+  "gradient-02": $gradient-02,
+  "gradient-01-reverse": $gradient-01-reverse,
+  "gradient-02-reverse": $gradient-02-reverse,
+
   //submate放置自定義的顏色樣式 primary secondary neutral
   "primary-50": $primary-50,
   "primary-100": $primary-100,

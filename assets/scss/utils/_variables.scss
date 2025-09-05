@@ -344,6 +344,102 @@ $secondary-900:#005547;
 $secondary-950:#003029;
 $secondary: $secondary-500;
 
+//submate漸變色工具包start---------------------------------------------------------------
+/* ---------- 0) 控制參數（用工具類覆寫） ---------- */
+:root{
+  --grad-scale-x: 100%;     /* 漸層寬度縮放：越小越密 */
+  --grad-scale-y: 100%;
+  --grad-pos-x: 50%;        /* 漸層位置 */
+  --grad-pos-y: 50%;
+  --grad-step: 60px;        /* 動態漸層色段距 */
+  --grad-border-w: 1px;     /* 邊框粗細 */
+  --grad-border-bg: #fff;   /* 邊框內層底色 */
+}
+
+/* ---------- 1) 定義漸層 ---------- */
+$gradient-01: linear-gradient(to left,  #1EDFAD, #11A7ED, #9738F5);
+$gradient-02: linear-gradient(to left,  #FFD93F, #ED8E11, #FF4040);
+$gradient-01-reverse: linear-gradient(to right, #1EDFAD, #11A7ED, #9738F5);
+$gradient-02-reverse: linear-gradient(to right,#FFD93F, #ED8E11, #FF4040);
+
+/* 小區塊也顯色：用 px 停駐點 */
+$gradient-dyn-01: linear-gradient(90deg,
+  #1EDFAD 0,
+  #11A7ED var(--grad-step),
+  #9738F5 calc(var(--grad-step) * 2)
+);
+$gradient-dyn-02: linear-gradient(90deg,
+  #FFD93F 0,
+  #ED8E11 var(--grad-step),
+  #FF4040  calc(var(--grad-step) * 2)
+);
+
+$gradients: (
+  gradient-01:           $gradient-01,
+  gradient-02:           $gradient-02,
+  gradient-01-reverse:   $gradient-01-reverse,
+  gradient-02-reverse:   $gradient-02-reverse,
+  gradient-dyn-01:       $gradient-dyn-01, /* 推薦給短字、小按鈕 */
+  gradient-dyn-02:       $gradient-dyn-02
+) !default;
+
+/* ---------- 2) 產出工具類：背景 / 文字 / 邊框 ---------- */
+@each $name, $val in $gradients {
+
+  /* 背景 */
+  .bg-#{$name}{
+    background-image: #{$val} !important;
+    background-repeat: no-repeat;
+    background-size: var(--grad-scale-x) var(--grad-scale-y);
+    background-position: var(--grad-pos-x) var(--grad-pos-y);
+  }
+
+  /* 文字 */
+  .text-#{$name}{
+    background-image: #{$val};
+    background-repeat: repeat-x;                    /* 平鋪 */
+    background-size: var(--grad-text-period, 1.5ch) 100%; /* 以字寬為單位切片 */
+    background-position: 0 50%;
+    -webkit-background-clip:text; background-clip:text;
+    color: transparent; -webkit-text-fill-color: transparent;
+  }
+
+  /* 邊框（雙層背景，可縮放＆定位） */
+  .border-#{$name}{
+    border: var(--grad-border-w) solid transparent;
+    background:
+      linear-gradient(var(--grad-border-bg), var(--grad-border-bg)) padding-box,
+      #{$val} border-box;
+    background-repeat: no-repeat, no-repeat;
+    background-size:
+      100% 100%,                          /* 內層純色 */
+      var(--grad-scale-x) var(--grad-scale-y); /* 外層漸層 */
+    background-position:
+      0 0,
+      var(--grad-pos-x) var(--grad-pos-y);
+  }
+}
+
+/* ---------- 3) 密/柔/方向 快捷工具 ---------- */
+/* 密度 */
+.grad-tight { --grad-scale-x: 10%; }
+.grad-md    { --grad-scale-x: 20%; }
+.grad-wide  { --grad-scale-x: 30%; }
+.grad-ultra { --grad-scale-x: 40%; }
+
+/* 動態漸層步距（越小越密） */
+.grad-step-40 { --grad-step: 40px; }
+.grad-step-60 { --grad-step: 60px; }
+.grad-step-80 { --grad-step: 80px; }
+
+/* 位置（方向感） */
+.grad-left   { --grad-pos-x: 0%;   }
+.grad-center { --grad-pos-x: 50%;  }
+.grad-right  { --grad-pos-x: 100%; }
+.grad-top    { --grad-pos-y: 0%;   }
+.grad-middle { --grad-pos-y: 50%;  }
+.grad-bottom { --grad-pos-y: 100%; }
+//submate漸變色工具包end---------------------------------------------------------------
 
 //$primary:       $blue !default; //bootstrap 預設有名稱重覆的先註解
 //$secondary:     $gray-600 !default; //bootstrap 預設有名稱重覆的先註解
@@ -394,7 +490,6 @@ $theme-colors: (
   "neutral-800": $neutral-800,
   "neutral-900": $neutral-900,
   "neutral-950": $neutral-950,
-
 
   "primary":    $primary,
   "secondary":  $secondary,
