@@ -1,0 +1,62 @@
+// 問題搜尋
+.herosearch {
+  padding-top: $spacer * 2.5;
+  padding-bottom: $spacer * 2.5;
+}
+
+@include media-breakpoint-up(md) {
+  .herosearch {
+    padding-top: $spacer * 5;
+    padding-bottom: $spacer * 5;
+  }
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  font-size: $h3-font-size;
+  color: $primary-800;
+  margin-bottom: $spacer * 1.5;
+
+  span {
+    margin: 0 12px;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $h2-font-size;
+    span {
+      margin: 0 16px;
+    }
+    margin-bottom: $spacer * 2.5;
+  }
+}
+
+// 搜尋列
+.search-input {
+  height: 48px;
+  color: $neutral-600;
+}
+
+.hint {
+  color: $neutral-700;
+  border-bottom: 1px solid $neutral-100;
+}
+
+/* 搜尋欄 + 下方選項（僅在 focus 時顯示；寬度與輸入欄一致） */
+.searchbox {
+  position: relative;
+}
+
+/* 預設不顯示選項 */
+.searchbox .result-panel {
+  display: none;
+  position: absolute;
+  width: 100%; // 與上方 input 同寬（因為同一容器）
+  overflow: auto;
+  background-color: #fff;
+}
+
+/* 只有當輸入欄位聚焦（click 或鍵盤 focus）時顯示 */
+.searchbox:focus-within .result-panel {
+  display: block;
+}

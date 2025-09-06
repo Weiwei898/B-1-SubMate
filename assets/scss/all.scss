@@ -5,23 +5,24 @@
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
+@import "./pages/faq.scss";
 @import "./pages/index.scss";
 
-.brice_style{
-    font-weight: bold;
-    background-color: bisque;
-    text-align: center;
+.brice_style {
+  font-weight: bold;
+  background-color: bisque;
+  text-align: center;
 }
-.brice_style2{
-    background-color: paleturquoise;
-    display: flex;
-    justify-content: center;
-}
-
-.brice_style2 img{
-    width: 200px;
+.brice_style2 {
+  background-color: paleturquoise;
+  display: flex;
+  justify-content: center;
 }
 
-.brice_style03{
-    background-color: rgb(217, 177, 217);
-    }
+.brice_style2 img {
+  width: 200px;
+}
+
+.brice_style03 {
+  background-color: rgb(217, 177, 217);
+}
