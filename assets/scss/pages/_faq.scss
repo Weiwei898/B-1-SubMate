@@ -1,0 +1,155 @@
+// 問題搜尋
+.herosearch {
+  padding-top: ($spacer * 2.5);
+  padding-bottom: ($spacer * 2.5);
+}
+
+@include media-breakpoint-up(md) {
+  .hero-search {
+    padding-top: ($spacer * 5);
+    padding-bottom: ($spacer * 5);
+  }
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  font-size: $h3-font-size;
+  color: $primary-800;
+  margin-bottom: ($spacer * 1.5);
+
+  span {
+    margin: 0 12px;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $h2-font-size;
+    span {
+      margin: 0 16px;
+    }
+    margin-bottom: ($spacer * 2.5);
+  }
+}
+
+// 搜尋列
+.search-input {
+  height: 48px;
+  color: $neutral-600;
+}
+
+.hint {
+  color: $neutral-700;
+  border-bottom: 1px solid $neutral-100;
+}
+
+/* 搜尋欄 + 下方選項（僅在 focus 時顯示；寬度與輸入欄一致） */
+.searchbox {
+  position: relative;
+}
+
+/* 預設不顯示選項 */
+.searchbox .result-panel {
+  display: none;
+  position: absolute;
+  width: 100%; // 與上方 input 同寬（因為同一容器）
+  overflow: auto;
+  background-color: #fff;
+}
+
+/* 只有當輸入欄位聚焦（click 或鍵盤 focus）時顯示 */
+.searchbox:focus-within .result-panel {
+  display: block;
+}
+
+// Logo區
+.brand {
+  color: $neutral-700;
+  font-size: $font-size-sm;
+  margin-bottom: $spacer;
+
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-base;
+    margin-bottom: ($spacer * 1.5);
+  }
+}
+
+.brand-grid {
+  padding: 0 ($spacer * 0.75);
+
+  @include media-breakpoint-up(md) {
+    padding: 0 ($spacer * 2.5);
+  }
+}
+
+/* 卡片（手機版尺寸） */
+.brand-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: ($spacer * 3);
+  padding: ($spacer * 0.5) ($spacer * 0.75);
+  border-radius: $border-radius;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid $neutral-100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+
+  &:hover {
+    background: $white;
+    border-color: rgba(34, 193, 195, 0.4);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.brand-logo {
+  max-height: ($spacer * 2);
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.brand-grid.row.row-cols-3 > * {
+  flex: 0 0 auto;
+  width: calc(100% / 3);
+}
+@include media-breakpoint-up(md) {
+  .brand-grid.row.row-cols-md-7 > * {
+    flex: 0 0 auto;
+    width: calc(100% / 7);
+  }
+}
+
+/* 卡片（電腦版尺寸） */
+@include media-breakpoint-up(md) {
+  .brand-card {
+    height: 72px;
+    padding: 0 ($spacer * 1.25);
+  }
+
+  .brand-logo {
+    max-height: ($spacer * 3);
+    max-width: 100%;
+  }
+}
+
+// FAQ
+.faq {
+  padding-top: ($spacer * 2.5);
+  padding-bottom: ($spacer * 2.5);
+}
+
+@include media-breakpoint-up(md) {
+  .faq {
+    padding-top: ($spacer * 5);
+    padding-bottom: ($spacer * 5);
+  }
+}
+
+.faq-title {
+  margin-bottom: ($spacer * 2.5);
+}
+
+@include media-breakpoint-up(md) {
+  .faq-title {
+    margin-bottom: ($spacer * 3);
+  }
+}
