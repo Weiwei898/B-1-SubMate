@@ -76,7 +76,22 @@
   // submate清除預設段落底部margin-bootom
   // submate修改清除預設標題元素標籤下方空間margin-bottom
 
-  // submate自訂圓
+  // submate自訂圓 rounded-
+      "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),
+        2: var(--#{$prefix}border-radius),
+        3: var(--#{$prefix}border-radius-lg),
+        4: var(--#{$prefix}border-radius-xl),
+        5: var(--#{$prefix}border-radius-xxl),
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    ),
   $border-radius:               1rem !default; // submate自訂圓角16px
   $border-radius-lg:            1.5rem !default; // submate自訂圓角24px
   $border-radius-xl:            6.25rem !default; // submate自訂圓角100px
@@ -115,7 +130,7 @@
   6: $h6-font-size,
   7: $h7-font-size, // 自訂 新增14px
 
-  rwd 在class裡寫
+  rwd 在class裡寫 md可以換 sm: 576px,  md: 768px, lg: 992px,  xl: 1200px,  xxl: 1400px
   h1-md // 40xp
   h2-md // 32xp
   h3-md // 28xp
@@ -123,3 +138,8 @@
   h5-md // 20xp
   h6-md // 16xp
   h7-md // 14xp
+
+ 
+
+ 
+
