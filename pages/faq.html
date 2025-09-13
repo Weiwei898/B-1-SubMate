@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!-- 問題搜尋 -->
+    <section class="bg-primary-50">
+      <div class="container hero-search">
+        <div class="row">
+          <!-- 標題 -->
+          <div class="d-flex justify-content-center">
+            <h2 class="hero-title">
+              <img
+                src="../assets/images/title item.svg"
+                alt="title item"
+              /><span>你想找什麼樣的問題？</span
+              ><img src="../assets/images/title item.svg" alt="title item" />
+            </h2>
+          </div>
+          <!-- 搜尋列 -->
+          <div class="d-flex justify-content-center mb-4">
+            <div class="col-12 col-md-4">
+              <div class="searchbox">
+                <div class="dropdown">
+                  <input
+                    id="faqSearch"
+                    class="form-control search-input mb-3"
+                    type="search"
+                    placeholder="輸入關鍵字"
+                    aria-controls="faqList"
+                  />
+
+                  <!-- 下方選項：預設隱藏；只有 focus 才顯示，寬度與上方欄位一致 -->
+                  <ul id="faqList" class="dropdown-menu result-panel p-3">
+                    <li class="hint fs-7 ps-3 pb-4 mb-4">我猜你想找...</li>
+                    <li>
+                      <a class="dropdown-item p-0 w-100" href="#">
+                        <div class="d-flex justify-content-between p-3">
+                          <span class="flex-grow-1 me-3"
+                            >Q1. 什麼是 SubMate？</span
+                          >
+                          <img
+                            src="../assets/images/logo.svg"
+                            style="height: 24px"
+                            alt="logo"
+                          /></div
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-0 w-100" href="#">
+                        <div class="d-flex justify-content-between p-3">
+                          <span class="flex-grow-1 me-3"
+                            >Q2. SubMate 有哪些可共享的服務？</span
+                          >
+                          <img
+                            src="../assets/images/logo.svg"
+                            style="height: 24px"
+                            alt="logo"
+                          /></div
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-0 w-100" href="#">
+                        <div class="d-flex justify-content-between p-3">
+                          <span class="flex-grow-1 me-3"
+                            >Q3. SubMate 是官方授權平台嗎？</span
+                          >
+                          <img
+                            src="../assets/images/logo.svg"
+                            style="height: 24px"
+                            alt="logo"
+                          /></div
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-0 w-100" href="#">
+                        <div class="d-flex justify-content-between p-3">
+                          <span class="flex-grow-1 me-3"
+                            >Q4：如何加入共享團？</span
+                          >
+                          <img
+                            src="../assets/images/logo.svg"
+                            style="height: 24px"
+                            alt="logo"
+                          /></div
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-0 w-100" href="#">
+                        <div class="d-flex justify-content-between p-3">
+                          <span class="flex-grow-1 me-3"
+                            >Q5：可以自己開團找朋友一起共享嗎？</span
+                          >
+                          <img
+                            src="../assets/images/logo.svg"
+                            style="height: 24px"
+                            alt="logo"
+                          /></div
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Logo區 -->
+        <div class="container text-center">
+          <p class="d-flex justify-content-center brand">
+            點選產品可快速前往常見問題
+          </p>
+          <!-- 品牌快捷區 -->
+          <div
+            class="brand-grid row row-cols-3 row-cols-md-7 g-2 g-md-3 justify-content-center"
+          >
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_Submate.svg"
+                  alt="SubMate"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_NETFLIX.svg"
+                  alt="NETFLIX"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_Disney+.svg"
+                  alt="Disney+"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_YouTubePremium.svg"
+                  alt="YoutubePremium"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_KKTV.svg"
+                  alt="KKTV"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_iQIYI.svg"
+                  alt="iQIYI"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_Spotify.svg"
+                  alt="Spotify"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_HamiVideo.svg"
+                  alt="HamiVideo"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_friday.svg"
+                  alt="friday"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_Canva.svg"
+                  alt="Canva"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_miro.svg"
+                  alt="miro"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_Microsoft365.svg"
+                  alt="Microsoft365"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="brand-card">
+                <img
+                  class="d-flex align-items-center justify-content-center brand-logo"
+                  src="../assets/images/Property1_Notion.svg"
+                  alt="Notion"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SubMate -->
+    <section class="faq container bg-primary-50">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8"></div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
