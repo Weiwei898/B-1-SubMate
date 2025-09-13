@@ -114,3 +114,12 @@
   5: $h5-font-size,
   6: $h6-font-size,
   7: $h7-font-size, // 自訂 新增14px
+
+  rwd 在class裡寫
+  h1-md // 40xp
+  h2-md // 32xp
+  h3-md // 28xp
+  h4-md // 24xp
+  h5-md // 20xp
+  h6-md // 16xp
+  h7-md // 14xp

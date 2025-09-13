@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+    .h1-md {
+      font-size: $font-size-base * 2.5 !important; // 40px
+    }
+
+    .h2-md {
+      font-size: $font-size-base * 2 !important; // 32px
+    }
+
+    .h3-md {
+      font-size: $font-size-base * 1.75 !important; // 28px
+    }
+
+    .h4-md {
+      font-size: $font-size-base * 1.5 !important; // 24px
+    }
+
+    .h5-md {
+      font-size: $font-size-base * 1.25 !important; // 20px
+    }
+
+    .h6-md {
+      font-size: $font-size-base !important; // 16px
+    }
+
+    .h7-md {
+      font-size: $font-size-base * 0.875 !important; // 14px
+    }
+
+    .small-md {
+        font-size: $font-size-base * 0.875 !important; // 14px
+    }
+
+}
