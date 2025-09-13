@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product_list</title>
+  </head>
+  <body class="bg-primary-50">
+    <section class="">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/images/Frame 2043686579.svg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/Frame 2043686579 (1).svg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/Frame 2043686579.svg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <!-- ★ 原本的 nav pills：把 tab 行為改成 filter，用 data-filter 標記 -->
+          <ul class="nav nav-pills justify-content-center" id="catalogFilters" role="tablist">
+            <li class="nav-item me-4" role="presentation">
+              <button class="nav-link active" type="button" data-filter="all">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_29351_2149" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_29351_2149)">
+                  <path d="M16.65 13L11 7.34995L16.65 1.69995L22.3 7.34995L16.65 13ZM3 11V2.99995H11V11H3ZM13 21V13H21V21H13ZM3 21V13H11V21H3ZM5 8.99995H9V4.99995H5V8.99995ZM16.675 10.2L19.5 7.37495L16.675 4.54995L13.85 7.37495L16.675 10.2ZM15 19H19V15H15V19ZM5 19H9V15H5V19Z" fill="#4F4F4F"/>
+                  </g>
+                </svg>
+                <div>所有項目</div>
+              </button>
+            </li>
+            <li class="nav-item me-4" role="presentation">
+              <button class="nav-link" type="button" data-filter="stream">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_29351_2148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_29351_2148)">
+                  <path d="M12 13.5L18 9.5L12 5.5V13.5ZM12.7 19H18.3C18.1833 19.4333 17.9833 19.7833 17.7 20.05C17.4167 20.3167 17.05 20.4833 16.6 20.55L5.7 21.875C5.15 21.9583 4.65417 21.8292 4.2125 21.4875C3.77084 21.1458 3.51667 20.7 3.45 20.15L2.125 9.225C2.05834 8.675 2.19167 8.18333 2.525 7.75C2.85834 7.31667 3.3 7.06667 3.85 7L5 6.85V8.85L4.1 8.975L5.45 19.9L12.7 19ZM9 17C8.45 17 7.97917 16.8042 7.5875 16.4125C7.19584 16.0208 7 15.55 7 15V4C7 3.45 7.19584 2.97917 7.5875 2.5875C7.97917 2.19583 8.45 2 9 2H20C20.55 2 21.0208 2.19583 21.4125 2.5875C21.8042 2.97917 22 3.45 22 4V15C22 15.55 21.8042 16.0208 21.4125 16.4125C21.0208 16.8042 20.55 17 20 17H9ZM9 15H20V4H9V15Z" fill="#4F4F4F"/>
+                  </g>
+                </svg>
+                <div>串流影音</div>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" type="button" data-filter="ai">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_29351_2147" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_29351_2147)">
+                  <path d="M4 21V16C4 15.45 4.19583 14.9792 4.5875 14.5875C4.97917 14.1958 5.45 14 6 14H18C18.55 14 19.0208 14.1958 19.4125 14.5875C19.8042 14.9792 20 15.45 20 16V21H4ZM9 13C7.61667 13 6.4375 12.5125 5.4625 11.5375C4.4875 10.5625 4 9.38333 4 8C4 6.61667 4.4875 5.4375 5.4625 4.4625C6.4375 3.4875 7.61667 3 9 3H15C16.3833 3 17.5625 3.4875 18.5375 4.4625C19.5125 5.4375 20 6.61667 20 8C20 9.38333 19.5125 10.5625 18.5375 11.5375C17.5625 12.5125 16.3833 13 15 13H9ZM6 19H18V16H6V19ZM9 11H15C15.8333 11 16.5417 10.7083 17.125 10.125C17.7083 9.54167 18 8.83333 18 8C18 7.16667 17.7083 6.45833 17.125 5.875C16.5417 5.29167 15.8333 5 15 5H9C8.16667 5 7.45833 5.29167 6.875 5.875C6.29167 6.45833 6 7.16667 6 8C6 8.83333 6.29167 9.54167 6.875 10.125C7.45833 10.7083 8.16667 11 9 11ZM9 9C9.28333 9 9.52083 8.90417 9.7125 8.7125C9.90417 8.52083 10 8.28333 10 8C10 7.71667 9.90417 7.47917 9.7125 7.2875C9.52083 7.09583 9.28333 7 9 7C8.71667 7 8.47917 7.09583 8.2875 7.2875C8.09583 7.47917 8 7.71667 8 8C8 8.28333 8.09583 8.52083 8.2875 8.7125C8.47917 8.90417 8.71667 9 9 9ZM15 9C15.2833 9 15.5208 8.90417 15.7125 8.7125C15.9042 8.52083 16 8.28333 16 8C16 7.71667 15.9042 7.47917 15.7125 7.2875C15.5208 7.09583 15.2833 7 15 7C14.7167 7 14.4792 7.09583 14.2875 7.2875C14.0958 7.47917 14 7.71667 14 8C14 8.28333 14.0958 8.52083 14.2875 8.7125C14.4792 8.90417 14.7167 9 15 9Z" fill="#4F4F4F"/>
+                  </g>
+                </svg>
+                <div>AI 協作工具</div>
+              </button>
+            </li>
+          </ul>   
+          <!-- ★ 把三個 tab-pane 改成單一「卡片牆」，用 data-cat 來分類 -->
+          <div class="container mt-4">
+            <div class="row g-3" id="catalogGrid">
+              <!-- 範例卡片：串流影音 -->
+              <div class="col-12 col-md-6 col-lg-4 catalog-item" data-cat="stream">
+                <div class="card h-100">
+                  <img src="../assets/images/stream_logo.svg" class="card-img-top" alt="LOGO">
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Netflix</h5>
+                  
+                    <!-- ★ 內部可橫滑切換的按鈕列（3 個視圖） -->
+                    <div class="card-switch nav gap-2 flex-nowrap overflow-auto mb-2 border border-1">
+                      <button class="btn btn-sm btn-outline-primary active" type="button" data-view="intro">介紹</button>
+                      <button class="btn btn-sm btn-outline-primary" type="button" data-view="plan">方案</button>
+                      <button class="btn btn-sm btn-outline-primary" type="button" data-view="note">注意</button>
+                    </div>
+                  
+                    <!-- ★ 三個內容面板：預設顯示 intro，其餘加 d-none -->
+                    <div class="card-pane" data-view="intro">
+                      超多影集電影，支援 4K HDR。
+                    </div>
+                    <div class="card-pane d-none" data-view="plan">
+                      基礎/標準/高級方案與同觀人數說明…
+                    </div>
+                    <div class="card-pane d-none" data-view="note">
+                      地區內容差異、離線下載限制…
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- 範例卡片：AI 協作工具 -->
+              <div class="col-12 col-md-6 col-lg-4 catalog-item" data-cat="ai">
+                <div class="card h-100">
+                  <img src="../assets/images/ai_logo.svg" class="card-img-top" alt="LOGO">
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Notion AI</h5>
+                  
+                    <div class="card-switch nav gap-2 flex-nowrap overflow-auto mb-2">
+                      <button class="btn btn-sm btn-outline-primary active" type="button" data-view="intro">介紹</button>
+                      <button class="btn btn-sm btn-outline-primary" type="button" data-view="plan">方案</button>
+                      <button class="btn btn-sm btn-outline-primary" type="button" data-view="note">注意</button>
+                    </div>
+                  
+                    <div class="card-pane" data-view="intro">
+                      文件生成、摘要、腦力激盪整合。
+                    </div>
+                    <div class="card-pane d-none" data-view="plan">
+                      Free / Plus / Business 差異…
+                    </div>
+                    <div class="card-pane d-none" data-view="note">
+                      權限、隱私、資料來源標註…
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- 之後你可以複製上面 .catalog-item，調整 data-cat="stream" 或 "ai" 即可 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
+
+<script>
+  // ★ 新增：列表篩選（依 nav 的 data-filter 過濾 .catalog-item）
+document.addEventListener('click', (e) => {
+  // 篩選控制
+  const filterBtn = e.target.closest('#catalogFilters .nav-link');
+  if (filterBtn) {
+    e.preventDefault();
+
+    // active 樣式
+    document.querySelectorAll('#catalogFilters .nav-link')
+      .forEach(b => b.classList.remove('active'));
+    filterBtn.classList.add('active');
+
+    const key = filterBtn.dataset.filter; // all | stream | ai
+    document.querySelectorAll('#catalogGrid .catalog-item')
+      .forEach(item => {
+        const show = (key === 'all' || item.dataset.cat === key);
+        item.classList.toggle('d-none', !show);
+      });
+    return;
+  }
+
+  // 卡片內三顆按鈕 → 切換下方內容
+  const switchBtn = e.target.closest('.card-switch [data-view]');
+  if (switchBtn) {
+    const card = switchBtn.closest('.card');
+    const view = switchBtn.dataset.view; // intro | plan | note
+
+    // 切換 active 按鈕
+    card.querySelectorAll('.card-switch [data-view]')
+      .forEach(b => b.classList.toggle('active', b === switchBtn));
+
+    // 切換對應內容
+    card.querySelectorAll('.card-pane')
+      .forEach(pane => pane.classList.toggle('d-none', pane.dataset.view !== view));
+
+    return;
+  }
+});
+</script>
