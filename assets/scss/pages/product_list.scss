@@ -2,3 +2,42 @@
     box-sizing: border-box;/*bxz:bb*/
 	/*outline: solid 1px;測試範圍用*/
 }
+
+#catalogFilters {
+  .nav-link {
+    /*清空原有hover active樣式*/
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    color: $neutral-300 !important;
+    padding: .25rem .5rem;
+  }
+
+  /* hover/active → 文字用 primary/700 */
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.active { color: $primary-700 !important; }
+
+  /* 預設圖示吃 currentColor；hover/active → 用全域漸層 */
+  .nav-link svg path { fill: currentColor; }
+  .nav-link:hover svg path,
+  .nav-link:focus svg path,
+  .nav-link.active svg path { fill: url(#grad-01) !important; }
+}
+
+
+.btn-effect {
+  /*清空原有hover active樣式*/
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: $neutral-100 !important;
+  padding: .25rem .5rem;
+}
+/* hover/active → 文字用 primary/700 */
+.btn-effect:focus,
+.btn-effect.active { 
+  color: $neutral-800 !important;
+  background-color: $neutral-100 !important; 
+}
+
