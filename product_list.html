@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>product_list</title>
-    <script type="module" crossorigin src="/B-1-SubMate/assets/main-CHTnKWpc.js"></script>
-    <link rel="stylesheet" crossorigin href="/B-1-SubMate/assets/main-Bcogy_sL.css">
+    <script type="module" crossorigin src="/B-1-SubMate/assets/main-BzoBetS5.js"></script>
+    <link rel="stylesheet" crossorigin href="/B-1-SubMate/assets/main-DqovPmsb.css">
   </head>
   <body class="bg-primary-50">
             <header class="bg-primary-50">
@@ -37,26 +37,33 @@
                                         FAQ
                                     </a>
                                     <!--子功能下拉選單-->
-                                    <ul class="dropdown-menu " aria-labelledby="navbarDropdownfaq">
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownfaq">
                                         <li><a  class="dropdown-item" href="faq.html">常見問題</a></li>
                                         <li><a  class="dropdown-item" href="#">客服工單</a></li>
                                     </ul>
                                 </li>
+                                <!--已登入才有-->
+                                <li class="nav-item">
+                                    <a class="nav-link  py-md-3 px-md-4  fs-6 " href= "index.html">會員中心</a>
+                                </li>
                             </ul>
                         </div>
 
-                        <!--電腦版登入/註冊按鈕-->
-                        <button type="button" class="btn-secondary-large d-none d-md-block">
-                            <a href="login.html">登入/註冊</a>
-                        </button>
+                        <!--電腦版購物車按鈕--> <!--已登入/未登入差異處--> 
+                        <div  class="cart-large">
+                            <a href="cart_list.html">
+                                <div class="cart-group">
+                                    <img class="local_mall" src="data:image/svg+xml,%3csvg%20width='18'%20height='21'%20viewBox='0%200%2018%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2021C1.45%2021%200.979167%2020.8042%200.5875%2020.4125C0.195833%2020.0208%200%2019.55%200%2019V7C0%206.45%200.195833%205.97917%200.5875%205.5875C0.979167%205.19583%201.45%205%202%205H4C4%203.61667%204.4875%202.4375%205.4625%201.4625C6.4375%200.4875%207.61667%200%209%200C10.3833%200%2011.5625%200.4875%2012.5375%201.4625C13.5125%202.4375%2014%203.61667%2014%205H16C16.55%205%2017.0208%205.19583%2017.4125%205.5875C17.8042%205.97917%2018%206.45%2018%207V19C18%2019.55%2017.8042%2020.0208%2017.4125%2020.4125C17.0208%2020.8042%2016.55%2021%2016%2021H2ZM2%2019H16V7H2V19ZM9%2013C10.3833%2013%2011.5625%2012.5125%2012.5375%2011.5375C13.5125%2010.5625%2014%209.38333%2014%208H12C12%208.83333%2011.7083%209.54167%2011.125%2010.125C10.5417%2010.7083%209.83333%2011%209%2011C8.16667%2011%207.45833%2010.7083%206.875%2010.125C6.29167%209.54167%206%208.83333%206%208H4C4%209.38333%204.4875%2010.5625%205.4625%2011.5375C6.4375%2012.5125%207.61667%2013%209%2013ZM6%205H12C12%204.16667%2011.7083%203.45833%2011.125%202.875C10.5417%202.29167%209.83333%202%209%202C8.16667%202%207.45833%202.29167%206.875%202.875C6.29167%203.45833%206%204.16667%206%205Z'%20fill='%234F4F4F'/%3e%3c/svg%3e" alt="購物車按鈕">
+                                    <img class="porduct-sum" src="data:image/svg+xml,%3csvg%20width='25'%20height='19'%20viewBox='0%200%2025%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.5'%20y='0.5'%20width='24'%20height='18'%20rx='9'%20fill='url(%23paint0_linear_31273_907)'/%3e%3crect%20x='0.5'%20y='0.5'%20width='24'%20height='18'%20rx='9'%20stroke='white'/%3e%3cpath%20d='M6.40588%2014V12.56H8.32588V6.956H6.70588V5.852C7.15388%205.772%207.53788%205.676%207.85788%205.564C8.18588%205.444%208.48988%205.292%208.76988%205.108H10.0779V12.56H11.7459V14H6.40588ZM16.04%2014.168C15.44%2014.168%2014.912%2013.996%2014.456%2013.652C14.008%2013.3%2013.656%2012.78%2013.4%2012.092C13.152%2011.396%2013.028%2010.536%2013.028%209.512C13.028%208.496%2013.152%207.652%2013.4%206.98C13.656%206.3%2014.008%205.792%2014.456%205.456C14.912%205.12%2015.44%204.952%2016.04%204.952C16.648%204.952%2017.176%205.124%2017.624%205.468C18.072%205.804%2018.42%206.308%2018.668%206.98C18.924%207.652%2019.052%208.496%2019.052%209.512C19.052%2010.536%2018.924%2011.396%2018.668%2012.092C18.42%2012.78%2018.072%2013.3%2017.624%2013.652C17.176%2013.996%2016.648%2014.168%2016.04%2014.168ZM16.04%2012.788C16.304%2012.788%2016.536%2012.688%2016.736%2012.488C16.936%2012.288%2017.092%2011.952%2017.204%2011.48C17.316%2011%2017.372%2010.344%2017.372%209.512C17.372%208.688%2017.316%208.044%2017.204%207.58C17.092%207.108%2016.936%206.78%2016.736%206.596C16.536%206.404%2016.304%206.308%2016.04%206.308C15.792%206.308%2015.564%206.404%2015.356%206.596C15.156%206.78%2014.996%207.108%2014.876%207.58C14.756%208.044%2014.696%208.688%2014.696%209.512C14.696%2010.344%2014.756%2011%2014.876%2011.48C14.996%2011.952%2015.156%2012.288%2015.356%2012.488C15.564%2012.688%2015.792%2012.788%2016.04%2012.788Z'%20fill='white'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_31273_907'%20x1='23.97'%20y1='1'%20x2='7.71812'%20y2='22.9878'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%231EDFAD'/%3e%3cstop%20offset='0.5'%20stop-color='%2311A7ED'/%3e%3cstop%20offset='1'%20stop-color='%239738F5'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="購物車商品數量圖示" >
+                                </div>
+                            </a>
+                        </div>
 
-                        <!--手機版右側按鈕群組-->
+                        <!--手機版右側按鈕群組-->  <!--已登入/未登入差異處-->
                         <div class="mobile-header-buttons d-flex d-md-none align-items-center">
                             
-                            <!--手機版登入/註冊，展開漢堡選單時會消失-->
-                            <button type="button" class="btn-secondary-medium mobile-login-toggle">
-                                <a href="login.html">登入/註冊</a>
-                            </button>
+                            <!--手機版登入/註冊，展開漢堡選單時會消失-->  <!--已登入/未登入差異處-->
+
 
                             <!--漢堡選單按鈕，collapse對應收合元素，bs內建-->
                             <button class="navbar-toggler btn-hamburger" type="button" data-bs-toggle="collapse"  data-bs-target="#mobileNavContent" aria-controls="mobileNavContent" aria-expanded="false" aria-label="Toggle navigation" >
@@ -83,14 +90,13 @@
                             <li class="nav-item dropdown">
                                 <a  class="nav-link mobile-nav-link  py-3 px-4  fs-6 " href="faq.html"> FAQ </a>
                             </li>
+                            <!--已登入才有-->
+                            <li class="nav-item">
+                                <a class="nav-link mobile-nav-link  py-3 px-4 fs-6 " href="index.html">會員中心</a>
+                            </li>
                         </ul> <!--手機版漢堡選單項目-功能名稱-->
 
-                        <!--手機版展開後的登入按鈕-->
-                        <div class="mobile-login-btn">
-                            <button type="button" class="btn-secondary-large-mobile">
-                                <a href="login.html">登入/註冊</a>
-                            </button>
-                        </div>
+                        <!--取消手機版展開後的登入按鈕-->  <!--已登入/未登入差異處-->
 
                     </div>  <!--mobile-nav-content-->
 
@@ -101,26 +107,7 @@
     </div>
 </header>
 
-<script>
-
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileNavMenu = document.getElementById('mobileNavContent');
-    const mobileLoginButton = document.querySelector('.mobile-login-toggle');
-
-    if (mobileNavMenu && mobileLoginButton) {
-        // 監聽選單展開事件
-        mobileNavMenu.addEventListener('show.bs.collapse', function() {
-            mobileLoginButton.style.display = 'none'; // 隱藏按鈕
-        });
-
-        // 監聽選單收合事件
-        mobileNavMenu.addEventListener('hide.bs.collapse', function() {
-            mobileLoginButton.style.display = 'block'; // 顯示按鈕
-        });
-    }
-});
-
-</script>
+<!--取消js監聽-->  <!--已登入/未登入差異處-->
  
     <section class="">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -191,8 +178,8 @@ document.addEventListener('DOMContentLoaded', function() {
               <!-- 範例卡片：串流影音 -->
                <!--NETFLIX-->
               <div class="col-12 col-md-6 col-lg-4 catalog-item" data-cat="stream">
-                <div class="card h-100 border border-2 rounded-3 border-neutral-0 bg-white bg-opacity-40">
-                  <div class="d-flex justify-content-center pt-4 pt-md-8">
+                <div class="card p-4 p-md-8 h-100 border border-2 rounded-3 border-neutral-0 bg-white bg-opacity-40">
+                  <div class="d-flex justify-content-center mb-4 mb-md-6">
                     <svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <rect x="17" y="5" width="166" height="70" fill="url(#pattern0_29222_16853)"/>
                       <defs>
@@ -203,105 +190,121 @@ document.addEventListener('DOMContentLoaded', function() {
                       </defs>
                     </svg>
                   </div>
-                  <div class="card-body">                
-                    <!-- ★ 內部可橫滑切換的按鈕列（2 個視圖） -->
-                    <div class="card-switch nav gap-2 p-2 flex-nowrap overflow-auto mb-4 border border-1 rounded-4">
-                      <button class="btn btn-sm text-neutral-300 px-4 py-2 rounded-4 btn-effect w-100 active" type="button" data-view="standard">Standard</button>
-                      <button class="btn btn-sm text-neutral-300 px-4 py-2  rounded-4 btn-effect w-100" type="button" data-view="premium">Premium</button>
-                    </div>         
+                  <!-- ★ 內部可橫滑切換的按鈕列（2 個視圖） -->
+                  <div class="card-switch bg-neutral-0 bg-neutral-0 nav gap-2 p-2 flex-nowrap overflow-auto mb-4 mb-md-6 border border-1 rounded-4 shadow">
+                    <button class="btn btn-sm text-neutral-300 px-4 py-2 rounded-4 btn-effect w-100 active" type="button" data-view="standard">Standard</button>
+                    <button class="btn btn-sm text-neutral-300 px-4 py-2  rounded-4 btn-effect w-100" type="button" data-view="premium">Premium</button>
+                  </div>
+                  <div class="card-body p-0">                         
                     <!-- ★ 二個內容面板：預設顯示 intro，其餘加 d-none -->
-                    <div class="card-pane d-flex flex-column justify-content-center" data-view="standard">
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">基本裝置無明確限制，下載裝置 Premium 可達 6 台</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">同住用戶免費。</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">不同住需加 NT$ 100 / 人</div>
+                    <div class="card-pane d-flex flex-column justify-content-between h-100" data-view="standard">
+                      <div class="d-flex flex-column gap-4 mb-4 mb-md-6">
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">基本裝置無明確限制，下載裝置 Premium 可達 6 台</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">同住用戶免費。</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">不同住需加 NT$ 100 / 人</div>
+                        </div>
                       </div>
                       <div class="d-flex gap-2 justify-content-center align-items-center">
-                        <p class="text-primary-600 h4">NT$ 330</p>
-                        <p class="text-neutral-800">/ 月</p>
+                        <p class="text-primary-600 h4 h3-md">NT$ 330</p>
+                        <p class="text-neutral-800 fs-md-5">/ 月</p>
                       </div>                    
                     </div>
-                    <div class="card-pane d-none" data-view="premium">
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">基本裝置無明確限制，下載裝置 Premium 可達 6 台</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">同住用戶免費。</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">不同住需加 NT$ 100 / 人</div>
+                    <div class="card-pane d-none d-flex flex-column justify-content-between h-100" data-view="premium">
+                      <div class="d-flex flex-column gap-4 mb-4 mb-md-6">
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">基本裝置無明確限制，下載裝置 Premium 可達 6 台</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">同住用戶免費。</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">不同住需加 NT$ 100 / 人</div>
+                        </div>
                       </div>
                       <div class="d-flex gap-2 justify-content-center align-items-center">
-                        <p class="text-primary-600 h4">NT$ 390</p>
-                        <p class="text-neutral-800">/ 月</p>
+                        <p class="text-primary-600 h4 h3-md">NT$ 390</p>
+                        <p class="text-neutral-800 fs-md-5">/ 月</p>
                       </div>
                     </div>
-                    <button class="mt-6 w-100 py-4 px-6 border-0 bg-primary-600 text-neutral-0 rounded-pill">立即訂閱</button>
                   </div>
+                  <button class="mt-4 mt-md-6 w-100 py-4 px-6 border-0 bg-primary-600 text-neutral-0 rounded-pill subscribe-btn">立即訂閱</button>
                 </div>
               </div>
               <!--Disney+-->
               <div class="col-12 col-md-6 col-lg-4 catalog-item" data-cat="stream">
-                <div class="card h-100 border border-2 rounded-3 border-neutral-0 bg-white bg-opacity-40">
-                  <div class="d-flex justify-content-center pt-4 pt-md-8">
+                <div class="card p-4 p-md-8 h-100 border border-2 rounded-3 border-neutral-0 bg-white bg-opacity-40">
+                  <div class="d-flex justify-content-center mb-4 mb-md-6">
                     <svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <rect x="26" width="147.338" height="80" fill="url(#pattern0_29222_16851)"/>
                       <defs>
@@ -312,108 +315,123 @@ document.addEventListener('DOMContentLoaded', function() {
                       </defs>
                     </svg>
                   </div>
-                  <div class="card-body">                
-                    <!-- ★ 內部可橫滑切換的按鈕列（2 個視圖） -->
-                    <div class="card-switch nav gap-2 p-2 flex-nowrap overflow-auto mb-4 border border-1 rounded-4">
-                      <button class="btn btn-sm text-neutral-300 px-4 py-2 rounded-4 btn-effect w-100 active" type="button" data-view="month">month</button>
-                      <button class="btn btn-sm text-neutral-300 px-4 py-2  rounded-4 btn-effect w-100" type="button" data-view="year">year</button>
-                    </div>
-                  
+                  <!-- ★ 內部可橫滑切換的按鈕列（2 個視圖） -->
+                  <div class="card-switch bg-neutral-0 bg-neutral-0 nav gap-2 p-2 flex-nowrap overflow-auto mb-4 mb-md-6 border border-1 rounded-4 shadow">
+                    <button class="btn btn-sm text-neutral-300 px-4 py-2 rounded-4 btn-effect w-100 active" type="button" data-view="month">month</button>
+                    <button class="btn btn-sm text-neutral-300 px-4 py-2  rounded-4 btn-effect w-100" type="button" data-view="year">year</button>
+                  </div>
+                  <div class="card-body p-0">                
                     <!-- ★ 二個內容面板：預設顯示 intro，其餘加 d-none -->
-                    <div class="card-pane d-flex flex-column justify-content-center" data-view="month">
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">10 台裝置（註冊)</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">4人同時觀看</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">無限制「地點」，可共享但官方不推薦</div>
-                      </div>
+                    <div class="card-pane d-flex flex-column justify-content-between h-100" data-view="month">
+                      <div class="d-flex flex-column gap-4 mb-4 mb-md-6">
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">10 台裝置（註冊)</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">4人同時觀看</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">無限制「地點」，可共享但官方不推薦</div>
+                        </div>
+                      </div>        
                       <div class="d-flex gap-2 justify-content-center align-items-center">
-                        <p class="text-primary-600 h4">NT$ 270</p>
-                        <p class="text-neutral-800">/ 月</p>
+                        <p class="text-primary-600 h4 h3-md">NT$ 270</p>
+                        <p class="text-neutral-800 fs-md-5">/ 月</p>
                       </div>                   
                     </div>
-                    <div class="card-pane d-none" data-view="year">
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">10 台裝置（註冊)</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">4人同時觀看</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">無限制「地點」，可共享但官方不推薦</div>
+                    <div class="card-pane d-none d-flex flex-column justify-content-between h-100" data-view="year">
+                      <div class="d-flex flex-column gap-4 mb-4 mb-md-6">
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">10 台裝置（註冊)</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">4人同時觀看</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">無限制「地點」，可共享但官方不推薦</div>
+                        </div>
                       </div>
                       <div class="d-flex gap-2 justify-content-center align-items-center">
-                        <p class="text-primary-600 h4">NT$ 2,790</p>
-                        <p class="text-neutral-800">/ 年</p>
+                        <p class="text-primary-600 h4 h3-md">NT$ 2,790</p>
+                        <p class="text-neutral-800 fs-md-5">/ 年</p>
                       </div>
                     </div>
-                    <button class="mt-6 w-100 py-4 px-6 border-0 bg-primary-600 text-neutral-0 rounded-pill">立即訂閱</button>
                   </div>
+                  <button class="mt-4 mt-md-6 w-100 py-4 px-6 border-0 bg-primary-600 text-neutral-0 rounded-pill">立即訂閱</button>
                 </div>
               </div>
             
               <!-- 範例卡片：AI 協作工具 -->
                <!--chatGPT-->
               <div class="col-12 col-md-6 col-lg-4 catalog-item" data-cat="ai">
-                <div class="card h-100 border border-2 rounded-3 border-neutral-0 bg-white bg-opacity-40">
-                  <div class="d-flex justify-content-center pt-4 pt-md-8">                    
+                <div class="card p-4 p-md-8 h-100 border border-2 rounded-3 border-neutral-0 bg-white bg-opacity-40">
+                  <div class="d-flex justify-content-center mb-4 mb-md-6">                    
                     <svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <rect y="11" width="200" height="58" fill="url(#pattern0_29222_16852)"/>
                       <defs>
@@ -424,112 +442,129 @@ document.addEventListener('DOMContentLoaded', function() {
                       </defs>
                     </svg>
                   </div>
-                  <div class="card-body">                
-                    <!-- ★ 內部可橫滑切換的按鈕列（2 個視圖） -->
-                    <div class="card-switch nav gap-2 p-2 flex-nowrap overflow-auto mb-4 border border-1 rounded-4">
-                      <button class="btn btn-sm text-neutral-300 px-4 py-2 rounded-4 btn-effect w-100 active" type="button" data-view="plus">Plus</button>
-                      <button class="btn btn-sm text-neutral-300 px-4 py-2  rounded-4 btn-effect w-100" type="button" data-view="pro">Pro</button>
-                    </div>
-                  
+                  <!-- ★ 內部可橫滑切換的按鈕列（2 個視圖） -->
+                  <div class="card-switch bg-neutral-0 nav gap-2 p-2 flex-nowrap overflow-auto mb-4 mb-md-6 border border-1 rounded-4 shadow">
+                    <button class="btn btn-sm text-neutral-300 px-4 py-2 rounded-4 btn-effect w-100 active" type="button" data-view="plus">Plus</button>
+                    <button class="btn btn-sm text-neutral-300 px-4 py-2  rounded-4 btn-effect w-100" type="button" data-view="pro">Pro</button>
+                  </div> 
+                  <div class="card-body p-0">                                              
                     <!-- ★ 二個內容面板：預設顯示 intro，其餘加 d-none -->
-                    <div class="card-pane d-flex flex-column justify-content-center" data-view="plus">
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">延伸使用旗艦模型 GPT-5</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">提高訊息、檔案上傳、資料分析和圖像產生功能的使用限額</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">使用 ChatGPT 智慧體</div>
+                    <div class="card-pane d-flex flex-column justify-content-between h-100" data-view="plus">
+                      <div class="d-flex flex-column gap-4 mb-4 mb-md-6">
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">延伸使用旗艦模型 GPT-5</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">提高訊息、檔案上傳、資料分析和圖像產生功能的使用限額</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">使用 ChatGPT 智慧體</div>
+                        </div>
                       </div>
                       <div class="d-flex gap-2 justify-content-center align-items-center">
-                        <p class="text-primary-600 h4">NT$ 690</p>
-                        <p class="text-neutral-800">/ 月</p>
+                        <p class="text-primary-600 h4 h3-md">NT$ 690</p>
+                        <p class="text-neutral-800 fs-md-5">/ 月</p>
                       </div>                   
                     </div>
-                    <div class="card-pane d-none" data-view="pro">
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">無限額使用 GPT-5</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">使用 GPT-5 pro，能對高難度問題投入更多運算資源來提供最佳解答</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">使用 OpenAI o3-pro，能對高難度問題投入更多運算資源來提供最佳解答</div>
-                      </div>
-                      <div class="d-flex mb-4">
-                        <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                          <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_29222_16883)">
-                          <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
-                          fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
-                          </g>
-                        </svg>
-                        <div class="fs-7 text-neutral-700">進階 ChatGPT 智慧體功能</div>
+                    <div class="card-pane d-none d-flex flex-column justify-content-between h-100" data-view="pro">
+                      <div class="d-flex flex-column gap-4 mb-4 mb-md-6">
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">無限額使用 GPT-5</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">使用 GPT-5 pro，能對高難度問題投入更多運算資源來提供最佳解答</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">使用 OpenAI o3-pro，能對高難度問題投入更多運算資源來提供最佳解答</div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="svg-task_alt-size">
+                            <svg class="text-secondary-500 me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0_29222_16883" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                              <rect width="24" height="24" fill="#D9D9D9"/>
+                              </mask>
+                              <g mask="url(#mask0_29222_16883)">
+                              <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.5625 14.275 4.3375C13.5583 4.1125 12.8 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 14.2167 4.77917 16.1042 6.3375 17.6625C7.89583 19.2208 9.78333 20 12 20C14.2167 20 16.1042 19.2208 17.6625 17.6625C19.2208 16.1042 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" 
+                              fill="currentColor"/><!--要改色path的 fill="#D9D9D9"-> fill="currentColor" -->
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="fs-7 fs-md-6 text-neutral-700">進階 ChatGPT 智慧體功能</div>
+                        </div>
                       </div>
                       <div class="d-flex gap-2 justify-content-center align-items-center">
-                        <p class="text-primary-600 h4">NT$ 6,990</p>
-                        <p class="text-neutral-800">/ 月</p>
+                        <p class="text-primary-600 h4 h3-md">NT$ 6,990</p>
+                        <p class="text-neutral-800 fs-md-5">/ 月</p>
                       </div>
                     </div>
-                    <button class="mt-6 w-100 py-4 px-6 border-0 bg-primary-600 text-neutral-0 rounded-pill">立即訂閱</button>
                   </div>
+                  <button class="mt-4 mt-md-6 w-100 py-4 px-6 border-0 bg-primary-600 text-neutral-0 rounded-pill">立即訂閱</button>
                 </div>
               </div>
             
@@ -577,7 +612,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </ul>
                         <ul class="d-flex flex-column">
                             <li><a class="fs-6" href="faq.html">FAQ</a></li>
-                            <li><a class="fs-6" href="#">登入 /註冊</a></li>
+                            <li><a class="fs-6" href="#">會員中心</a></li>
                         </ul>
                     </div>
 
