@@ -41,3 +41,18 @@
   background-color: $neutral-100 !important; 
 }
 
+.svg-task_alt-size {
+  font-size: clamp(20px, 2.4vw, 24px);
+  line-height: 1; // 避免垂直擠壓
+  display: inline-flex; align-items: center; // 可選
+}
+.svg-task_alt-size > svg { width: 1em; height: 1em; }
+
+  .card.border.border-2.rounded-3:hover{
+  border-color: transparent !important; // 先關掉白邊
+  background-image:
+    linear-gradient($primary-100, $primary-100),
+    $gradient-01;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
