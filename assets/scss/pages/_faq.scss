@@ -1,11 +1,26 @@
-// 問題搜尋
-.herosearch {
-  padding-top: ($spacer * 2.5);
-  padding-bottom: ($spacer * 2.5);
+// 通用樣式
+.logo-me-3 {
+  margin-right: ($spacer * 0.75);
+
+  @include media-breakpoint-up(md) {
+    margin-right: $spacer;
+  }
 }
 
-@include media-breakpoint-up(md) {
-  .hero-search {
+.logo-mb-4 {
+  margin-bottom: ($spacer * 1.5);
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: ($spacer * 2.5);
+  }
+}
+
+// 問題搜尋
+.hero-search {
+  padding-top: ($spacer * 2.5);
+  padding-bottom: ($spacer * 2.5);
+
+  @include media-breakpoint-up(md) {
     padding-top: ($spacer * 5);
     padding-bottom: ($spacer * 5);
   }
@@ -51,14 +66,32 @@
 .searchbox .result-panel {
   display: none;
   position: absolute;
-  width: 100%; // 與上方 input 同寬（因為同一容器）
+  width: 100%;
   overflow: auto;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 /* 只有當輸入欄位聚焦（click 或鍵盤 focus）時顯示 */
 .searchbox:focus-within .result-panel {
   display: block;
+}
+
+/* 搜尋結果：讓左側文字可省略，右側 logo 固定在最右側 */
+.searchbox .dropdown-item > .d-flex {
+  align-items: center;
+  min-width: 0;
+}
+.searchbox .dropdown-item span {
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.searchbox .dropdown-item img {
+  flex: 0 0 auto;
+  height: 24px;
 }
 
 // Logo區
@@ -102,6 +135,7 @@
 }
 
 .brand-logo {
+  min-width: 60px;
   max-height: ($spacer * 2);
   max-width: 100%;
   object-fit: contain;
@@ -110,6 +144,7 @@
 .brand-grid.row.row-cols-3 > * {
   flex: 0 0 auto;
   width: calc(100% / 3);
+  min-width: 0;
 }
 @include media-breakpoint-up(md) {
   .brand-grid.row.row-cols-md-7 > * {
@@ -128,6 +163,8 @@
   .brand-logo {
     max-height: ($spacer * 3);
     max-width: 100%;
+    height: auto;
+    min-width: auto;
   }
 }
 
@@ -135,11 +172,94 @@
 .faq {
   padding-top: ($spacer * 2.5);
   padding-bottom: ($spacer * 2.5);
-}
 
-@include media-breakpoint-up(md) {
-  .faq {
+  @include media-breakpoint-up(md) {
     padding-top: ($spacer * 5);
     padding-bottom: ($spacer * 5);
   }
+}
+
+.faq-logo {
+  max-height: 48px;
+  max-width: 100%;
+
+  @include media-breakpoint-up(md) {
+    max-height: 64px;
+  }
+}
+
+.accordion-button::after {
+  background-image: none;
+  display: none;
+}
+
+.accordion-button {
+  height: 60px;
+  font-size: $h6-font-size;
+  font-weight: 600;
+
+  @include media-breakpoint-up(md) {
+    height: 89px;
+    font-size: $h5-font-size;
+  }
+}
+
+.accordion-icon {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.accordion-icon .bi {
+  font-size: 20px;
+  font-weight: 700;
+  color: $secondary-500;
+}
+
+.accordion-button .bi-dash-lg {
+  display: none;
+}
+.accordion-button.collapsed .bi-plus-lg {
+  display: inline-block;
+}
+.accordion-button.collapsed .bi-dash-lg {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) .bi-plus-lg {
+  display: none;
+}
+.accordion-button:not(.collapsed) .bi-dash-lg {
+  display: inline-block;
+}
+
+.accordion-body {
+  padding: ($spacer * 1.5) ($spacer * 2);
+  line-height: 1.7;
+  font-size: $font-size-base;
+}
+
+/* 漸層火焰圖示 */
+.gradient-icon {
+  background: linear-gradient(45deg, #ff4040, #ed8e11 55%, #ffd93f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.q-hot-ic {
+  display: inline-block;
+  width: ($spacer * 1.5);
+  height: ($spacer * 1.5);
+  margin-left: ($spacer * 0.5);
+  vertical-align: middle;
+  background: linear-gradient(45deg, #ff4040, #ed8e11 55%, #ffd93f);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
 }
