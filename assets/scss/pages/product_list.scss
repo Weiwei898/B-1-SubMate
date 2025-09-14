@@ -2,3 +2,57 @@
     box-sizing: border-box;/*bxz:bb*/
 	/*outline: solid 1px;測試範圍用*/
 }
+
+#catalogFilters {
+  .nav-link {
+    /*清空原有hover active樣式*/
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    color: $neutral-300 !important;
+    padding: .25rem .5rem;
+  }
+
+  /* hover/active → 文字用 primary/700 */
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.active { color: $primary-700 !important; }
+
+  /* 預設圖示吃 currentColor；hover/active → 用全域漸層 */
+  .nav-link svg path { fill: currentColor; }
+  .nav-link:hover svg path,
+  .nav-link:focus svg path,
+  .nav-link.active svg path { fill: url(#grad-01) !important; }
+}
+
+
+.btn-effect {
+  /*清空原有hover active樣式*/
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: $neutral-100 !important;
+  padding: .25rem .5rem;
+}
+/* hover/active → 文字用 primary/700 */
+.btn-effect:focus,
+.btn-effect.active { 
+  color: $neutral-800 !important;
+  background-color: $neutral-100 !important; 
+}
+
+.svg-task_alt-size {
+  font-size: clamp(20px, 2.4vw, 24px);
+  line-height: 1; // 避免垂直擠壓
+  display: inline-flex; align-items: center; // 可選
+}
+.svg-task_alt-size > svg { width: 1em; height: 1em; }
+
+  .card.border.border-2.rounded-3:hover{
+  border-color: transparent !important; // 先關掉白邊
+  background-image:
+    linear-gradient($primary-100, $primary-100),
+    $gradient-01;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
