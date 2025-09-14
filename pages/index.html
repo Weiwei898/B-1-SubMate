@@ -7,12 +7,60 @@
     <title>index</title>
   </head>
   <body>
-  
-
-    <h1 class="index-title">我是首頁11</h1>
+    <%- include('./layout/header'); -%>
+    <section class="index-banner-bg bg-primary-50">
+      <div class="index-banner"><img src="../assets/images/Property1_Default.png" alt=""></div>
+      <div class="index-banner-infoBox">
+        <p class="text-primary fs-3 mb-6">想要蹭優惠，又揪不到咖嗎?</p>
+        <div class="logo"><img src="../assets/images/logo.svg" alt=""></div>
+        <h2 class="fs-display mb-8">一起訂，省到底</h2>
+        <div>
+          <a href="" class="btn btn-primary bg-primary-600 text-neutral-0">立即查看熱門產品</a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary-50">
+      <div class="container py-8">
+        <h2 class="d-md-flex gap-md-3 justify-content-md-center mb-8">
+          <img src="../assets/images/title_item.svg" alt="">
+          <span class="fs-1">最新消息</span>
+          <img src="../assets/images/title_item.svg" alt="">
+        </h2>
+        <div id="carouselExampleInterval" class="index-news-carousel carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-md-flex gap-md-3 px-6 index-news-bg rounded justify-content-md-between shadow-sm">
+                <div>
+                  <p class="fs-3">買越多、省越多！</p>
+                  <p class="fs-3">開幕慶，兩件以上立即9折，</p>
+                  <p class="fs-3">享受服務更划算。</p>
+                  <div>
+                    <button type="button" class="btn btn-primary bg-primary-600 text-neutral-0 fs-3">查看詳情</button>
+                  </div>
+                </div>
+                <div><img src="../assets/images/Property1_1.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
 
     
-
+    <%- include('./layout/footer'); -%>
 
 
     <script type="module" src="../main.js"></script>

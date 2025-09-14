@@ -1,3 +1,44 @@
 .index-title {
   font-size: 100px;
 }
+
+.index-banner-bg{
+  padding: 0 40px 40px 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.index-banner{
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.index-banner-infoBox{
+  position: absolute;
+  top: 200px;
+  left: 272px;
+}
+
+.index-banner-infoBox .logo{
+  width: 320px;
+}
+
+.index-banner-infoBox .fs-display{
+  font-size: 56px;
+}
+
+.btn{
+  padding: 16px 24px;
+  border-radius: 100px;
+}
+
+.index-news-bg{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.index-news-carousel .carousel-control-prev-icon{
+  background-image: url(../assets/icons/arrow_back.svg);
+}
+.index-news-carousel .carousel-control-next-icon{
+  background-image: url(../assets/icons/arrow_forward.svg);
+}
