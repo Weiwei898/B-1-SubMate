@@ -9,41 +9,58 @@
   <body>
     <%- include('./layout/header'); -%>
     <section class="index-banner-bg bg-primary-50">
-      <div class="index-banner"><img src="../assets/images/Property1_Default.png" alt=""></div>
+      <div class="index-banner">
+        <picture>
+          <source srcset="../assets/images/Property1_mobile.png" media="(max-width: 767px)">
+          <img src="../assets/images/Property1_Default.png" alt="">
+        </picture>
+      </div>
       <div class="index-banner-infoBox">
-        <p class="text-primary fs-3 mb-6">想要蹭優惠，又揪不到咖嗎?</p>
+        <p class="text-primary fs-5 fs-md-3 mb-4">想要蹭優惠，又揪不到咖嗎?</p>
         <div class="logo"><img src="../assets/images/logo.svg" alt=""></div>
-        <h2 class="fs-display mb-8">一起訂，省到底</h2>
+        <h2 class="fs-md-display h1 mb-8">一起訂，省到底</h2>
         <div>
-          <a href="" class="btn btn-primary bg-primary-600 text-neutral-0">立即查看熱門產品</a>
+          <a href="" class="btn index-btn btn-primary bg-primary-600 text-neutral-0 fs-6">立即查看熱門產品</a>
         </div>
       </div>
     </section>
     <section class="bg-primary-50">
       <div class="container py-8">
-        <h2 class="d-md-flex gap-md-3 justify-content-md-center mb-8">
+        <h2 class="d-flex gap-md-3 justify-content-center align-content-center mb-6 mb-md-10 text-primary-800">
           <img src="../assets/images/title_item.svg" alt="">
-          <span class="fs-1">最新消息</span>
+          <span class="fs-1 ms-3 me-3">最新消息</span>
           <img src="../assets/images/title_item.svg" alt="">
         </h2>
-        <div id="carouselExampleInterval" class="index-news-carousel carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="index-news-carousel carousel carousel-dark slide mb-8" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="d-md-flex gap-md-3 px-6 index-news-bg rounded justify-content-md-between shadow-sm">
-                <div>
-                  <p class="fs-3">買越多、省越多！</p>
-                  <p class="fs-3">開幕慶，兩件以上立即9折，</p>
-                  <p class="fs-3">享受服務更划算。</p>
+              <div class="d-flex gap-3 p-6 index-news-bg rounded justify-content-between shadow-sm flex-column-reverse flex-md-row">
+                <div class="d-md-flex flex-md-column justify-content-center ms-5">
+                  <p class="fs-2 mb-3">買越多、省越多！</p>
+                  <p class="fs-2 mb-3">開幕慶，兩件以上立即9折，</p>
+                  <p class="fs-2 mb-6">享受服務更划算。</p>
                   <div>
-                    <button type="button" class="btn btn-primary bg-primary-600 text-neutral-0 fs-3">查看詳情</button>
+                    <button type="button" class="btn index-btn btn-primary bg-primary-600 text-neutral-0 fs-6">查看詳情</button>
                   </div>
                 </div>
-                <div><img src="../assets/images/Property1_1.svg" alt=""></div>
+                <div class="mb-6"><img src="../assets/images/Property1_1.svg" alt=""></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex gap-3 p-6 index-news-bg rounded justify-content-between shadow-sm flex-column-reverse flex-md-row">
+                <div class="d-md-flex flex-md-column justify-content-center ms-5">
+                  <p class="fs-2 mb-3">買越多、省越多！</p>
+                  <p class="fs-2 mb-3">開幕慶，兩件以上立即9折，</p>
+                  <p class="fs-2 mb-6">享受服務更划算。</p>
+                  <div>
+                    <button type="button" class="btn index-btn btn-primary bg-primary-600 text-neutral-0 fs-6">查看詳情</button>
+                  </div>
+                </div>
+                <div class="mb-6"><img src="../assets/images/Property1_1.svg" alt=""></div>
               </div>
             </div>
           </div>
@@ -52,6 +69,159 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary-50">
+      <div class="container py-8">
+        <h2 class="d-flex gap-md-3 justify-content-center align-content-center mb-6 mb-md-10 text-primary-800">
+          <img src="../assets/images/title_item.svg" alt="">
+          <span class="fs-1 ms-3 me-3">用戶推薦</span>
+          <img src="../assets/images/title_item.svg" alt="">
+        </h2>
+        <div id="carouselExampleDark" class="index-share-carousel carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-md-flex gap-3">
+                <div>
+                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
+                    <li class="me-4 mb-6"><img src="../assets/images/portrait01.png" alt=""></li>
+                    <li class="d-flex flex-column justify-content-center mb-6">
+                      <h6 class="fs-5">台北 張先生</h6>
+                      <div class="d-md-flex">
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      </div>
+                    </li>
+                    <li>
+                      <p>
+                        最近發現 SubMate 超好用！現在訂閱 Netflix、Disney+、Spotify <span class="text-primary-600">一個人真的太貴</span>，自己找人湊團又麻煩還容易出問題。 SubMate 幫你<span class="text-primary-600">快速找到可靠團員</span>，自動處理付款，還有帳號安全保障。省錢、省心又方便，訂閱共享就用 SubMate！
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
+                    <li class="me-4 mb-6"><img src="../assets/images/portrait02.png" alt=""></li>
+                    <li class="d-flex flex-column justify-content-center mb-6">
+                      <h6 class="fs-5">台南 黃小姐</h6>
+                      <div class="d-md-flex">
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      </div>
+                    </li>
+                    <li>
+                      <p>
+                        你也是訂閱一堆平台花很多錢的人嗎？加起來真的很傷荷包。以前<span class="text-primary-600">找朋友湊團超麻煩</span>，管理帳號、收款都讓人頭痛。自從用 SubMate，<span class="text-primary-600">一鍵成團</span>、自動扣款，帳號安全還有保障。省下大筆費用，享受所有內容SubMate真的超讚！
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
+                    <li class="me-4 mb-6"><img src="../assets/images/portrait03.png" alt=""></li>
+                    <li class="d-flex flex-column justify-content-center mb-6">
+                      <h6 class="fs-5">台中 陳太太</h6>
+                      <div class="d-md-flex">
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      </div>
+                    </li>
+                    <li>
+                      <p>
+                        訂閱費越來越高，一個人扛真的不划算，<span class="text-primary-600">湊團又麻煩還怕遇到問題</span>。我朋友推薦我用 SubMate，真的超方便！平台自動幫你找到團隊，所有分攤付款和帳號管理都幫你處理好。<span class="text-primary-600">安全、省心、省錢</span>，訂閱共享原來可以這麼輕鬆！
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-md-flex gap-3">
+                <div>
+                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
+                    <li class="me-4 mb-6"><img src="../assets/images/portrait01.png" alt=""></li>
+                    <li class="d-flex flex-column justify-content-center mb-6">
+                      <h6 class="fs-5">台北 張先生</h6>
+                      <div class="d-md-flex">
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      </div>
+                    </li>
+                    <li>
+                      <p>
+                        最近發現 SubMate 超好用！現在訂閱 Netflix、Disney+、Spotify <span class="text-primary-600">一個人真的太貴</span>，自己找人湊團又麻煩還容易出問題。 SubMate 幫你<span class="text-primary-600">快速找到可靠團員</span>，自動處理付款，還有帳號安全保障。省錢、省心又方便，訂閱共享就用 SubMate！
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
+                    <li class="me-4 mb-6"><img src="../assets/images/portrait02.png" alt=""></li>
+                    <li class="d-flex flex-column justify-content-center mb-6">
+                      <h6 class="fs-5">台南 黃小姐</h6>
+                      <div class="d-md-flex">
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      </div>
+                    </li>
+                    <li>
+                      <p>
+                        你也是訂閱一堆平台花很多錢的人嗎？加起來真的很傷荷包。以前<span class="text-primary-600">找朋友湊團超麻煩</span>，管理帳號、收款都讓人頭痛。自從用 SubMate，<span class="text-primary-600">一鍵成團</span>、自動扣款，帳號安全還有保障。省下大筆費用，享受所有內容SubMate真的超讚！
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
+                    <li class="me-4 mb-6"><img src="../assets/images/portrait03.png" alt=""></li>
+                    <li class="d-flex flex-column justify-content-center mb-6">
+                      <h6 class="fs-5">台中 陳太太</h6>
+                      <div class="d-md-flex">
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      </div>
+                    </li>
+                    <li>
+                      <p>
+                        訂閱費越來越高，一個人扛真的不划算，<span class="text-primary-600">湊團又麻煩還怕遇到問題</span>。我朋友推薦我用 SubMate，真的超方便！平台自動幫你找到團隊，所有分攤付款和帳號管理都幫你處理好。<span class="text-primary-600">安全、省心、省錢</span>，訂閱共享原來可以這麼輕鬆！
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
