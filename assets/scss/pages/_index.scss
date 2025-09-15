@@ -1,3 +1,130 @@
 .index-title {
   font-size: 100px;
 }
+
+.index-banner-bg{
+  padding: 0 12px 40px 12px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.index-banner{
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.index-banner img{
+  width: 100%;
+}
+
+.index-banner-infoBox{
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  padding: 0 12px 0 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.index-banner-infoBox .logo{
+  width: 320px;
+  display: none;
+}
+
+.index-banner-infoBox .h1{
+  font-size: 40px;
+}
+
+.index-btn{
+  padding: 16px 24px;
+  border-radius: 100px;
+}
+
+.index-news-bg{
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #fff;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.index-news-carousel .carousel-control-prev-icon{
+  background-image: url(../assets/icons/arrow_back.svg);
+}
+.index-news-carousel .carousel-control-next-icon{
+  background-image: url(../assets/icons/arrow_forward.svg);
+}
+
+.index-news-carousel .carousel-control-next{
+  right: -200px;
+}
+.index-news-carousel .carousel-control-prev{
+  left: -200px;
+}
+
+.index-news-carousel img{
+  width: 100%;
+}
+
+.index-news-carousel .carousel-indicators{
+  bottom: -60px;
+}
+
+.index-share-carousel .list{
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0;
+  border-radius: 24px;
+}
+
+.index-share-carousel .list li{
+  list-style-type: none;
+}
+
+.index-share-carousel .carousel-control-prev-icon{
+  background-image: url(../assets/icons/arrow_back.svg);
+}
+.index-share-carousel .carousel-control-next-icon{
+  background-image: url(../assets/icons/arrow_forward.svg);
+}
+
+.index-share-carousel .carousel-control-next{
+  right: -200px;
+}
+.index-share-carousel .carousel-control-prev{
+  left: -200px;
+}
+
+@media (min-width:767px){
+  .index-banner-bg{
+    padding: 0 40px 40px 40px;
+  }
+
+  .index-banner-infoBox .fs-md-display{
+    font-size: 56px;
+  }
+  .index-banner-infoBox{
+    top: 200px;
+    left: 120px;
+    transform: translate(0,0);
+    width: initial;
+    padding: 0;
+    text-align: left;
+  }
+  .index-banner-infoBox .logo{
+    display: block;
+  }
+  .index-banner{
+    width: initial;
+  }
+  .index-banner img{
+    width: initial;
+  }
+}
+
+@media (min-width:1400px){
+  .index-banner-infoBox{
+    left: 272px;
+  }
+}
+
