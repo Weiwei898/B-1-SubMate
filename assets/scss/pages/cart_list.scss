@@ -1,0 +1,187 @@
+ol,
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.justify-end{
+    justify-content:end;
+}
+.text-justify{
+    text-align:justify;
+}
+/*=================
+   標題與閃電logo
+===================*/
+
+.title-container {
+    justify-content: center;
+}
+
+.title-logo {
+    background-image: url("../assets/images/title_item.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+/*=====================
+   標題與閃電logo結束<<<
+=======================*/
+
+/*=================
+   購物車三步驟
+===================*/
+
+.cart-steps a{
+    align-items: center;
+}
+
+a.cart-step-on {
+    color: $primary-700;
+
+    &:hover{
+        color: $primary-700;
+        text-decoration: none;
+    }
+}
+a.cart-step-off  {
+    color: $neutral-300;
+
+    &:hover {
+        color: $primary-700;
+    }
+}
+
+
+
+
+div.cart-step-common {
+    width: 32px;
+    height: 32px;
+
+    /* 使用 CSS 變數來保留遮罩 URL 的位置 */
+    -webkit-mask-image: var(--cart-step-mask-url);
+    mask-image: var(--cart-step-mask-url);
+
+    /* 確保遮罩圖片填滿容器 */
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+a.cart-step-on div.cart-step-common{ //svg圖片顏色
+    background: $gradient-01;
+}
+
+a.cart-step-off div.cart-step-common{ //svg圖片顏色
+    background: $neutral-300;
+}
+
+a.cart-step-off:hover div.cart-step-common{ //svg圖片顏色
+    background:  $primary-600;
+}
+
+div.cart-step01{ 
+    --cart-step-mask-url: url('../images/shopping-cart.svg'); 
+}
+
+div.cart-step02{
+    --cart-step-mask-url: url('../images/edit.svg'); 
+}
+
+div.cart-step03{
+    --cart-step-mask-url: url('../images/file-text.svg'); 
+}
+
+/*=================
+   購物車三步驟結束<<<<
+===================*/
+
+
+/*=================
+   購物車確認步驟
+===================*/
+
+div.next-step{
+    border-radius: 100px;
+}
+
+.next-step a{
+    color: $neutral-0;   
+    padding: 4px 16px;
+
+    &:hover{
+        color: $neutral-0;   
+    }
+}
+
+
+//數字增減元件
+
+button.rounded-circle{
+    width: 24px;
+    height: 24px;
+    line-height: 1;
+    font-size: 1rem;
+    color: $neutral-0;
+
+    &:hover,
+    &:disabled{
+        color: $neutral-0;
+    }
+}
+.number-control input{
+    width: 64px;
+    font-size: 1rem;
+    line-height: 0.75;
+
+}
+
+/* 隱藏 Chrome, Safari, Edge, Opera 的上下箭頭 */
+.number-control input[type="number"]::-webkit-outer-spin-button,
+.number-control input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+//總金額區域
+.cart-total{
+    border: none;
+}
+
+/*=================
+   購物車確認步驟<<<<
+===================*/
+
+.btn-outline-success{
+    border-radius: 100px;
+    background-color: $neutral-0;
+    
+    
+    & a {
+        display: block;
+        padding: 4px 16px;
+        color: green;
+    }
+    
+    &:hover,
+    &:active {
+
+        a{
+            color: $neutral-0;
+        }
+    }
+}
