@@ -58,9 +58,11 @@
 
 .index-news-carousel .carousel-control-next{
   right: -200px;
+  display: none;
 }
 .index-news-carousel .carousel-control-prev{
   left: -200px;
+  display: none;
 }
 
 .index-news-carousel img{
@@ -69,6 +71,13 @@
 
 .index-news-carousel .carousel-indicators{
   bottom: -60px;
+}
+
+.carousel-indicators [data-bs-target]{
+  width: 12px;
+  height: 6px;
+  border-radius: 12px;
+  border: none;
 }
 
 .index-share-carousel .list{
@@ -95,6 +104,75 @@
   left: -200px;
 }
 
+.swiper-container{
+  position: relative;
+}
+
+.swiper-container .mySwiper .list{
+  padding: 0;
+}
+
+.swiper-container .mySwiper .list li{
+  list-style-type: none;
+}
+
+.swiper-container .mySwiper .list li p{
+  text-align: justify;
+}
+
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-rtl .swiper-button-prev{
+  right: -115px;
+}
+
+.swiper-container .swiper-button-prev, 
+.swiper-container .swiper-rtl .swiper-button-next{
+  left: -115px;
+}
+
+.swiper-container .swiper-button-prev, 
+.swiper-container .swiper-button-next{
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  display: none;
+}
+
+.swiper-container .swiper-button-prev:after, 
+.swiper-container .swiper-rtl .swiper-button-next:after{
+  content: "";
+  background-image: url(../assets/icons/arrow_back.svg);
+  background-size: 100% auto;
+  width: 32px;
+  height: 32px;
+}
+
+.swiper-container .swiper-button-next:after, 
+.swiper-container .swiper-rtl .swiper-button-prev:after{
+  content: "";
+  background-image: url(../assets/icons/arrow_forward.svg);
+  background-size: 100% auto;
+  width: 32px;
+  height: 32px;
+}
+
+.swiper-container .swiper-pagination-fraction, 
+.swiper-container .swiper-pagination-custom, 
+.swiper-container .swiper-horizontal > .swiper-pagination-bullets, 
+.swiper-container .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: -32px;
+}
+
+.swiper-pagination-bullet-active{
+  background:  #333;
+}
+
+.swiper-pagination-bullet{
+  width: 12px;
+  height: 6px;
+  border-radius: 12px;
+}
+
 @media (min-width:767px){
   .index-banner-bg{
     padding: 0 40px 40px 40px;
@@ -119,6 +197,16 @@
   }
   .index-banner img{
     width: initial;
+  }
+  .index-news-carousel .carousel-control-next{
+    display: flex;
+  }
+  .index-news-carousel .carousel-control-prev{
+    display: flex;
+  }
+  .swiper-container .swiper-button-prev, 
+  .swiper-container .swiper-button-next{
+    display: flex;
   }
 }
 
