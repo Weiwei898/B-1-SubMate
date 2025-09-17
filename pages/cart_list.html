@@ -61,101 +61,99 @@
     </section><!--標題、步驟-->
 
     <!--購物車確認步驟-->
-    <section class="d-flex flex-column gap-6 mb-10">
+    <section id="cart-list-form" class="d-flex flex-column gap-6 mb-10">
         <!--結帳內容-->
-        <div class="container bg-neutral-0 shadow-sm rounded px-6 py-10">
-            <!--表格：商品列-->
-            <div class="row">
-                <div class="col-12">                        
-                    <table class="table table-hover">
-                        <thead>
-                            <tr class="align-middle">
-                                <th scope="col" class="text-center">產品名稱</th>
-                                <th scope="col" class="text-center">方案</th>
-                                <th scope="col" class="text-center">數量</th>
-                                <th scope="col" class="text-center">小計(新台幣)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="align-middle"> <!--垂直置中-->
-                                <th scope="col"><!--包含商品勾選--->
-                                    <div class="form-check d-flex gap-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="cart-product01" checked>
-                                        <label class="form-check-label" for="cart-product01">
-                                            Netfilx
-                                        </label>
-                                    </div>
-                                </th>
-                                <th scope="col" class="text-center">基本​方案</th>
-                                <th scope="col" class="d-flex justify-center"><!--數值增減元件--->
-                                    <div class="number-control d-flex align-items-center gap-3">
-                                        <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button">-</button>
-                                        <input type="number" class="form-control text-center" number-input value="2" min="0" max="99" >    
-                                        <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button">+</button>
-                                    </div>
-                                </th><!--數值增減元件--->
-                                <th scope="col" class="text-end">$4,800</th>
-                            </tr>
-                            
-                            <tr class="align-middle"> <!--垂直置中-->
-                                <th scope="col"><!--包含商品勾選--->
-                                    <div class="form-check d-flex gap-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="cart-product02" checked>
-                                        <label class="form-check-label" for="cart-product02">
-                                            Youtube Premium
-                                        </label>
-                                    </div>
-                                </th>
-                                <th scope="col" class="text-center">一個月</th>
-                                <th scope="col" class="d-flex justify-center"><!--數值增減元件--->
-                                    <div class="number-control d-flex align-items-center gap-3">
-                                        <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button">-</button>
-                                        <input type="number" class="form-control text-center number-input" value="1" min="0" max="99">    
-                                        <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button">+</button>
-                                    </div>
-                                </th><!--數值增減元件--->
-                                <th scope="col" class="text-end">$180</th>
-                            </tr>
-                            
+        <div class="container">
+            <div class="white-board bg-neutral-0 shadow-sm rounded px-12 py-10"> <!--白板放這才能跟footer對齊-->
+                <!--表格：商品列-->
+                <div class="row">
+                    <div class="col-12">                        
+                        <table class="table table-hover">
+                            <thead>
+                                <tr class="align-middle">
+                                    <th scope="col" class="text-center">產品名稱</th>
+                                    <th scope="col" class="text-center">方案</th>
+                                    <th scope="col" class="text-center">數量</th>
+                                    <th scope="col" class="text-center">小計(新台幣)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle"> <!--垂直置中-->
+                                    <th scope="col"><!--包含商品勾選--->
+                                        <div class="form-check d-flex gap-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="cart-product01" checked>
+                                            <label class="form-check-label" for="cart-product01">
+                                                Netfilx
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="text-center">基本​方案</th>
+                                    <th scope="col" class="d-flex justify-center"><!--數值增減元件--->
+                                        <div class="number-control d-flex align-items-center gap-3">
+                                            <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button">-</button>
+                                            <input type="number" class="form-control text-center" number-input value="2" min="0" max="99" >    
+                                            <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button">+</button>
+                                        </div>
+                                    </th><!--數值增減元件--->
+                                    <th scope="col" class="text-end">$4,800</th>
+                                </tr>
+                                
+                                <tr class="align-middle"> <!--垂直置中-->
+                                    <th scope="col"><!--包含商品勾選--->
+                                        <div class="form-check d-flex gap-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="cart-product02" checked>
+                                            <label class="form-check-label" for="cart-product02">
+                                                Youtube Premium
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="text-center">一個月</th>
+                                    <th scope="col" class="d-flex justify-center"><!--數值增減元件--->
+                                        <div class="number-control d-flex align-items-center gap-3">
+                                            <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button">-</button>
+                                            <input type="number" class="form-control text-center number-input" value="1" min="0" max="99">    
+                                            <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button">+</button>
+                                        </div>
+                                    </th><!--數值增減元件--->
+                                    <th scope="col" class="text-end">$180</th>
+                                </tr>
+                                
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
 
-            <!--小計--->
-            <div class="row d-flex justify-end">
-                <div class="col-4" >
-                    <table class="table cart-total table-borderless">
-                        <tr>
-                            <th class="text-end">總計金額 </th>
-                            <th class="text-start"> NT$</th>
-                            <th class="text-end">4,980 元</th>
-                        </tr>
+                <!--小計--->
+                <div class="row d-flex justify-end">
+                    <div class="col-4" >
+                        <table class="table cart-total table-borderless">
+                            <tr>
+                                <th class="text-end">總計金額 </th>
+                                <th class="text-start"> NT$</th>
+                                <th class="text-end">4,980 元</th>
+                            </tr>
 
-                        <tr>
-                            <th class="text-end">折扣總金額 </th>
-                            <th class="text-start"> NT$</th>
-                            <th class="text-end">-100 元</th>
-                        </tr>
+                            <tr>
+                                <th class="text-end">折扣總金額 </th>
+                                <th class="text-start"> NT$</th>
+                                <th class="text-end">-100 元</th>
+                            </tr>
 
-                        <tr>
-                            <th class="text-end">總付款 </th>
-                            <th class="text-start"> NT$</th>
-                            <th class="text-end">4,980 元</th>
-                        </tr>
-                    </table>
+                            <tr>
+                                <th class="text-end">總付款 </th>
+                                <th class="text-start"> NT$</th>
+                                <th class="text-end">4,980 元</th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-                    
+            </div>        
         </div><!--結帳內容container-->
 
         <!--按鈕-->
         <div class="container d-flex justify-end">
-            <button type="button" class=" next-step btn btn-primary-600">
-                <a href="cart_payment.html" role="button">下一步</a>
-                <div></div>
-            </button>
+            <a href="cart_payment.html#payment-setting"  class=" next-step btn btn-primary-600" role="button">下一步</a>
         </div><!--按鈕-->
 
     </section><!--購物車確認步驟-->
