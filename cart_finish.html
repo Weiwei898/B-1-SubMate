@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>購物車結帳資料</title>
+    <title>結帳完成</title>
   <script type="module" crossorigin src="/B-1-SubMate/assets/main-Atqf0m-P.js"></script>
   <link rel="stylesheet" crossorigin href="/B-1-SubMate/assets/main-m0Gafej4.css">
 </head>
@@ -140,7 +140,7 @@
 
                         <!--2.填寫或確認結帳資料-->
                         <li>
-                            <a href="cart_payment.html" class="cart-step-on d-flex flex-column fs-4 fw-bolder" >
+                            <a href="cart_payment.html" class="cart-step-off d-flex flex-column fs-4 fw-bolder" >
                                 <div class="cart-step-common cart-step02"></div>  
                                 填寫或確認結帳資料
                             </a> 
@@ -148,7 +148,7 @@
 
                         <!--3.完成付款-->
                         <li>
-                            <a href="cart_finish.html" class="cart-step-off d-flex flex-column fs-4 fw-bolder" >
+                            <a href="cart_finish.html" class="cart-step-on d-flex flex-column fs-4 fw-bolder" >
                                 <div class="cart-step-common cart-step03"></div>  
                                 完成付款
                             </a> 
@@ -160,204 +160,68 @@
         </div>
     </section><!--標題、步驟-->
 
-    <!--購物車確認步驟-->
-    <section class="d-flex flex-column gap-6 mb-10">
-        <!--結帳內容-->
+
+    <!--結帳完成畫面+資訊-->
+    <section id ='cart-finish-section' class="d-flex flex-column gap-6 mb-10">
         <div class="container">
-            <div class="white-board bg-neutral-0 shadow-sm rounded px-12 py-10"> <!--白板放這才能跟footer對齊-->
-                <!--表格：商品列-->
-                <div class="row">
-                    <div class="col-12">                        
-                        <table class="table table-hover">
-                            <thead>
-                                <tr class="align-middle">
-                                    <th scope="col" class="text-center">產品名稱</th>
-                                    <th scope="col" class="text-center">方案</th>
-                                    <th scope="col" class="text-center">數量</th>
-                                    <th scope="col" class="text-center">小計(新台幣)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="align-middle"> <!--垂直置中-->
-                                    <th scope="col"><!--包含商品勾選--->
-                                        <div class="form-check d-flex gap-3">
-                                            <input class="form-check-input" type="checkbox" value="" id="cart-product01" checked disabled>
-                                            <label for="cart-product01">
-                                                Netfilx
-                                            </label>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="text-center">基本​方案</th>
-                                    <th scope="col" class="d-flex justify-center"><!--純數值--->
-                                        <div class="number-control d-flex align-items-center gap-3">
-                                            <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button"  disabled>-</button>
-                                            <input type="number" class="form-control text-center" number-input value="2" min="0" max="99" disabled>    
-                                            <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button"  disabled>+</button>
-                                        </input>
-                                    </th><!--數值增減元件--->
-                                    <th scope="col" class="text-end">$4,800</th>
-                                </tr>
+            <div class="white-board bg-neutral-0 shadow-sm rounded px-12 py-10">
+                <!---結帳完成圖示-->
+                <div class="finish-container  d-flex  align-items-center justify-center">
+                    <div class="finish-bg"></div>
+                    <div class="row ">
+                        <div class="finish-image d-flex gap-12 ">
+                            <div class="check-circle"></div>
+
+                            <div class=" d-flex flex-column justify-center gap-10">
                                 
-                                <tr class="align-middle"> <!--垂直置中-->
-                                    <th scope="col"><!--包含商品勾選--->
-                                        <div class="form-check d-flex gap-3">
-                                            <input class="form-check-input" type="checkbox" value="" id="cart-product02" checked disabled>
-                                            <label for="cart-product02">
-                                                Youtube Premium
-                                            </label>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="text-center">一個月</th>
-                                    <th scope="col" class="d-flex justify-center"><!--數值增減元件--->
-                                        <div class="number-control d-flex align-items-center gap-3">
-                                            <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button"  disabled>-</button>
-                                            <input type="text" class="form-control text-center number-input" value="1" min="0" max="99" disabled>    
-                                            <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button"  disabled>+</button>
-                                        </div>
-                                    </th><!--數值增減元件--->
-                                    <th scope="col" class="text-end">$180</th>
-                                </tr>
-                                
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!--小計--->
-                <div class="row d-flex justify-end">
-                    <div class="col-4" >
-                        <table class="table cart-total table-borderless">
-                            <tr>
-                                <th class="text-end">總計金額 </th>
-                                <th class="text-start"> NT$</th>
-                                <th class="text-end">4,980 元</th>
-                            </tr>
-
-                            <tr>
-                                <th class="text-end">折扣總金額 </th>
-                                <th class="text-start"> NT$</th>
-                                <th class="text-end">-100 元</th>
-                            </tr>
-
-                            <tr>
-                                <th class="text-end">總付款 </th>
-                                <th class="text-start"> NT$</th>
-                                <th class="text-end">4,980 元</th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>        
-        </div><!--結帳內容container-->
-
-    </section><!--購物車確認步驟-->
-
-    <section  id = 'payment-setting' class="d-flex flex-column gap-6 mb-10"><!--設定付款方式-->
-        <div class="container ">
-            <div class="white-board bg-neutral-0 shadow-sm rounded px-12 py-10"> <!--白板放這才能跟footer對齊-->
-                <!--小標題-->
-                <div class="row mb-10">
-                    <div class="col-12">                        
-                        <h3>設定付款方式</h3>
-                    </div>
-                </div>  
-                
-                <!--付款方式細節-->
-                <div class="row">
-                    <div class="col-12">
-                        <ol class="d-flex flex-column gap-2 mb-4">
-                            <li class="d-flex justify-between align-items-center py-2">
-                                <div class="form-check d-flex gap-3 align-items-center">
-                                    <input class="form-check-input" type="radio" value="" name = "payment-select" id="payment01"  aria-describedby="payment01-text"  checked>
-                                    <label for="payment01" class="fs-5 fw-bold">
-                                        信用卡
-                                    </label>
-                                    <div id="payment01-text" class="form-text">12xx xxxx xxxx 9633</div>
+                                <!--Submate logo-->
+                                <div class="submate-logo d-flex align-items-center gap-12"  >
+                                    <img src="data:image/svg+xml,%3csvg%20width='28'%20height='36'%20viewBox='0%200%2028%2036'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.19984%206.33039C11.3655%202.42099%2012.5212%201.56282%2014.5067%200.903322C16.4456%200.259109%2020.04%200.406174%2021.8855%201.20495C26.1514%203.05165%2028.4247%207.4954%2027.1443%2011.4847C26.8682%2012.3452%2026.3974%2013.3314%2026.0984%2013.6763L25.5546%2014.3032L23.9097%2012.9421C22.3359%2011.6398%2022.2801%2011.5441%2022.6141%2010.7289C23.8576%207.69639%2020.1668%203.99173%2016.6109%204.70371C15.3442%204.95718%206.61732%2012.9418%206.30777%2014.1304C5.94238%2015.5333%206.47557%2016.4619%208.98925%2018.8017L11.4521%2021.0939L13.0852%2019.5947C14.9658%2017.868%2015.9782%2017.673%2017.1938%2018.8034C18.5663%2020.0792%2018.2636%2021.0328%2015.7065%2023.4888C13.511%2025.5971%2012.3032%2026.4071%2011.5191%2026.2966C11.306%2026.2664%2010.9704%2026.2257%2010.7734%2026.2058C10.1406%2026.1421%203.3527%2019.7265%202.49754%2018.3839C1.79964%2017.2883%201.67092%2016.7491%201.67092%2014.9234C1.67092%2011.9117%202.30865%2010.9203%207.19984%206.33039Z'%20fill='url(%23paint0_linear_31205_93)'/%3e%3cpath%20d='M10.5336%2015.6054C9.43901%2014.3118%209.68623%2013.7397%2012.3686%2011.3572C15.8851%208.2339%2015.7902%208.21746%2020.8349%2012.8328C25.3328%2016.9484%2026.0044%2017.949%2026.01%2020.5466C26.0165%2023.4427%2025.1964%2024.6336%2019.7667%2029.614C14.1711%2034.7467%2012.8218%2035.5267%209.58604%2035.4993C4.41227%2035.4552%200.555822%2032.0796%200.0620187%2027.1632C-0.0905888%2025.6444%200.00371114%2025.1521%200.740694%2023.6258C1.9628%2021.0942%202.08873%2021.0541%203.79068%2022.6606C5.19237%2023.9839%205.23486%2024.073%204.89521%2024.9794C3.84619%2027.7768%206.29629%2031.072%209.42536%2031.072C11.1869%2031.072%2012.2576%2030.3796%2016.5077%2026.4933C22.6312%2020.8938%2022.6734%2020.683%2018.4602%2016.7084L15.5529%2013.9661L14.2102%2015.1657C12.596%2016.6078%2011.4933%2016.7399%2010.5336%2015.6054Z'%20fill='url(%23paint1_linear_31205_93)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_31205_93'%20x1='27.4641'%20y1='0.5'%20x2='-6.54223'%20y2='27.2192'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%231EDFAD'/%3e%3cstop%20offset='0.5'%20stop-color='%2311A7ED'/%3e%3cstop%20offset='1'%20stop-color='%239738F5'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_31205_93'%20x1='27.4641'%20y1='0.5'%20x2='-6.54223'%20y2='27.2192'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%231EDFAD'/%3e%3cstop%20offset='0.5'%20stop-color='%2311A7ED'/%3e%3cstop%20offset='1'%20stop-color='%239738F5'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="Submate-logo">
+                                    <img src="/B-1-SubMate/assets/Submate-BLjHYzf6.svg" alt="Submate-word">
                                 </div>
-                                <div>
-                                    <a href="#"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M3%206H5H21'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M19%206V20C19%2020.5304%2018.7893%2021.0391%2018.4142%2021.4142C18.0391%2021.7893%2017.5304%2022%2017%2022H7C6.46957%2022%205.96086%2021.7893%205.58579%2021.4142C5.21071%2021.0391%205%2020.5304%205%2020V6M8%206V4C8%203.46957%208.21071%202.96086%208.58579%202.58579C8.96086%202.21071%209.46957%202%2010%202H14C14.5304%202%2015.0391%202.21071%2015.4142%202.58579C15.7893%202.96086%2016%203.46957%2016%204V6'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M10%2011V17'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="刪除鍵"></a>
-                                </div>
-                            </li>
-                            
-                            <li class="d-flex justify-between align-items-center py-2">
-                                <div class="form-check d-flex gap-3 align-items-center">
-                                    <input class="form-check-input" type="radio" value="" id="payment02" name = "payment-select"  aria-describedby="payment02-text"  >
-                                    <label for="payment02" class="fs-5 fw-bold">
-                                        ATM匯款
-                                    </label>
-                                    <div id="payment02-text" class="form-text text-danger">
-                                        ※尚未完成付款，請於【結帳完成頁面】或【訂單紀錄】確認匯款資訊
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="#"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M3%206H5H21'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M19%206V20C19%2020.5304%2018.7893%2021.0391%2018.4142%2021.4142C18.0391%2021.7893%2017.5304%2022%2017%2022H7C6.46957%2022%205.96086%2021.7893%205.58579%2021.4142C5.21071%2021.0391%205%2020.5304%205%2020V6M8%206V4C8%203.46957%208.21071%202.96086%208.58579%202.58579C8.96086%202.21071%209.46957%202%2010%202H14C14.5304%202%2015.0391%202.21071%2015.4142%202.58579C15.7893%202.96086%2016%203.46957%2016%204V6'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M10%2011V17'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="刪除鍵"></a>
-                                </div>
-                            </li>
-                        </ol>
 
-                        <!--新增付款方式按鈕-->
-                        <div class="col-2">
-                            <a href="#" class="  btn btn-outline-success" role="button">新增付款方式</a>
+
+                                <h1>結帳完成</h1>
+                            </div>                  
                         </div>
                     </div>
                 </div>
-            </div>
-        </div><!--付款方式container-->
-    </section><!--設定付款方式-->
 
-    <section  class="d-flex flex-column gap-6 mb-10"><!--結帳資訊-->
-        <div class="container">
-            <div class="white-board bg-neutral-0 shadow-sm rounded px-12 py-10"> <!--白板放這才能跟footer對齊-->
-                <!--小標題-->
-                <div class="row mb-10">
-                    <div class="col-12">                        
-                        <h3>結帳資訊</h3>
-                    </div>
-                </div>       
-
+                <!---結帳完成圖示-->
                 <div class="row">
-                    <div class="col-12">
-                        <form class="d-flex flex-column gap-2">
-                            <div class="d-flex py-2">
-                                <p class="col-1 text-justify ">姓名：</p>
-                                <p class="col-6 ">布萊斯</p>
-                            </div>
-                            <div class="d-flex py-2">
-                                <p class="col-1 ">電子郵件：</p>
-                                <p class="col-6 ">bulai@gmail.com</p>
-                            </div>
-                            <div class="d-flex py-2">
-                                <p class="col-1 ">手機號碼：</p>
-                                <p class="col-6 ">0987-654-321</p>
-                            </div>
-                            <div class="form-group d-flex  align-items-center py-2">
-                                <label for="bill-address" class="col-1 control-label" id="bill-address">帳單地址：</label>
-                                <input type="text" class="form-control  required-field" id="bill-address" value="台北市大安區新生南路一段223號"
-                                    placeholder="請輸入帳單地址">
-                            </div>
-                            <div class="form-group d-flex align-items-center py-2">
-                                <label for="payment-term-input" class="col-1 control-label " id="payment-term">付款方式：</label>
-                                <input type="text" class="form-control" id="payment-term-input" value="ATM" disabled>
-                            </div>
-                
-                        </form>
-                    </div>
+                    <ol class="d-flex flex-column gap-4">
+                        <li class="d-flex">
+                            <p class="col-1">訂單編號：</p>
+                            <p class="col-10">S2025070452970</p>
+                        </li>
+
+                        <li class="d-flex">
+                            <p class="col-1">訂單編號：</p>
+                            <p class="col-10">ATM匯款</p>
+                        </li>
+
+                        <li class="d-flex">
+                            <p class="col-1">虛擬帳號：</p>
+                            <p class="col-10 text-danger">國泰​世華​ 013 - 69​8906​213239879</p>
+                        </li>
+
+                        <li class="d-flex">
+                            <p class="col-1">繳費期限：</p>
+                            <p class="col-10 text-danger">​20​25/07/05 23:59:59​（逾期​自動​取​消訂單） </p>
+                        </li>
+                    </ol>
                 </div>
-            </div>
-            
-        </div><!--付款方式container-->
+
+            </div>         
+        </div><!--結帳完成畫面container-->
 
         <!--按鈕-->
-        <div class="container d-flex justify-end gap-4">
-            <!--上一步-->
-            <a href="cart_list.html#cart-list-form" class="btn btn-outline-success" role="button">上一步</a>
-            <!--下一步-->
-            <a href="cart_finish.html#cart-finish-section" class="next-step  btn btn-primary-600" id= "checkout-button" role="button">結帳完成</a>
+        <div class="container d-flex justify-end gap-4">       
+            <a href="#" class="  btn btn-outline-success" role="button">查看訂單</a>
+            <a href="index.html" class=" btn btn-outline-success" role="button">前往首頁</a>
         </div><!--按鈕-->
-    </section><!--結帳資訊-->
 
-
+    </section><!--結帳完成畫面-->
 
     <footer class="bg-primary-50">
     <div class="container">
@@ -426,90 +290,36 @@
 
 
     <script>
-    //付款方式自動帶入
-    document.addEventListener('DOMContentLoaded', function() {
-        // 1. 找到所有付款方式的 radio 按鈕 (它們共用相同的 name)
-        const paymentRadios = document.querySelectorAll('input[name="payment-select"]');
+    // 讓背景圖片寬高可以自適應白板的寬度和高度
+    // 定義背景圖片的原始尺寸
+    const ORIGINAL_IMAGE_WIDTH = 1920;
+    const ORIGINAL_IMAGE_HEIGHT = 713;
+
+    function updateFinishContainerDimensions() {
+        const whiteBoard = document.querySelector('.white-board');
+        const finishContainer = document.querySelector('.finish-container');
         
-        // 2. 找到要更新的 input 欄位
-        const paymentTermInput = document.querySelector('input#payment-term-input');
-
-        // 3. 為每個 radio 按鈕添加 change 事件監聽器
-        paymentRadios.forEach(radio => {
-            radio.addEventListener('change', function() {
-                // 4. 檢查哪個 radio 被選中
-                if (this.checked) {
-                    // 找到與被選中 radio 關聯的 label 標籤
-                    const label = document.querySelector(`label[for="${this.id}"]`);
-                    
-                    // 確保找到了 label
-                    if (label) {
-                        // 5. 將 label 的文字內容設定給 input 的 value
-                        paymentTermInput.value = label.textContent.trim();
-                    }
-                }
-            });
-        });
-
-        // 可選：頁面載入時，先設定一次初始值
-        const initialCheckedRadio = document.querySelector('input[name="payment-select"]:checked');
-        if (initialCheckedRadio) {
-            const initialLabel = document.querySelector(`label[for="${initialCheckedRadio.id}"]`);
-            if (initialLabel) {
-                paymentTermInput.value = initialLabel.textContent.trim();
-            }
+        if (whiteBoard && finishContainer) {
+            // 1. 取得 white-board 的寬度
+            const whiteBoardWidth = whiteBoard.offsetWidth;
+            
+            // 2. 將此寬度設定給 finish-container
+            finishContainer.style.width = `${whiteBoardWidth - 8}px`;
+            
+            // 3. 根據原始比例計算出新的高度
+            const aspectRatio = ORIGINAL_IMAGE_HEIGHT / ORIGINAL_IMAGE_WIDTH;
+            const newHeight = whiteBoardWidth * aspectRatio;
+            
+            // 4. 將計算出的高度設定給 finish-container
+            finishContainer.style.height = `${newHeight - 8}px`;
         }
-    });
+    }
 
-    //檢查必填欄位
-    document.addEventListener('DOMContentLoaded', function() {
-        const checkoutButton = document.getElementById('checkout-button');
-        const requiredFields = document.querySelectorAll('.required-field');
+    // 頁面載入時執行一次
+    document.addEventListener('DOMContentLoaded', updateFinishContainerDimensions);
 
-        checkoutButton.addEventListener('click', function(event) {
-            let formIsValid = true;
-            let firstInvalidFieldLabel = '';
-
-            // 遍歷每個必填欄位
-            requiredFields.forEach(field => {
-                // 檢查欄位是否為空
-                if (field.value.trim() === '') {
-                    // 如果是空值，加上 .is-invalid class
-                    field.classList.add('is-invalid');
-                    formIsValid = false;
-
-                    // 如果這是第一個無效的欄位，獲取其對應的 label 名稱
-                    if (firstInvalidFieldLabel === '') {
-                        // 找到與 input id 關聯的 label
-                        const label = document.querySelector(`label[for="${field.id}"]`);
-                        if (label) {
-                            firstInvalidFieldLabel = label.textContent.trim();
-                        }
-                    }
-                } else {
-                    // 如果有值，移除 .is-invalid class
-                    field.classList.remove('is-invalid');
-                }
-            });
-
-            if (formIsValid) {
-                // alert('所有欄位都已填寫，準備送出！');
-            } else {
-                event.preventDefault();
-
-                // 顯示第一個未填寫欄位的名稱
-                if (firstInvalidFieldLabel) {
-                    // 移除 label 文字的最後一個字元(冒號)
-                    const formattedInvalidLabel = firstInvalidFieldLabel.slice(0, -1);
-                    alert(`請填寫「${formattedInvalidLabel}」欄位！`);
-                } else {
-                    // 如果找不到 label，顯示通用訊息
-                    alert('請檢查必填欄位！');
-                }
-            }
-        });
-    });
-
+    // 視窗大小改變時，也重新執行
+    window.addEventListener('resize', updateFinishContainerDimensions);
     </script>
 
 </body>
