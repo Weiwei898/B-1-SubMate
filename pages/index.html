@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css">  
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -82,149 +106,74 @@
           <span class="fs-1 ms-3 me-3">用戶推薦</span>
           <img src="../assets/images/title_item.svg" alt="">
         </h2>
-        <div id="carouselExampleDark" class="index-share-carousel carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-md-flex gap-3">
-                <div>
-                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
-                    <li class="me-4 mb-6"><img src="../assets/images/portrait01.png" alt=""></li>
-                    <li class="d-flex flex-column justify-content-center mb-6">
-                      <h6 class="fs-5">台北 張先生</h6>
-                      <div class="d-md-flex">
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                      </div>
-                    </li>
-                    <li>
-                      <p>
-                        最近發現 SubMate 超好用！現在訂閱 Netflix、Disney+、Spotify <span class="text-primary-600">一個人真的太貴</span>，自己找人湊團又麻煩還容易出問題。 SubMate 幫你<span class="text-primary-600">快速找到可靠團員</span>，自動處理付款，還有帳號安全保障。省錢、省心又方便，訂閱共享就用 SubMate！
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
-                    <li class="me-4 mb-6"><img src="../assets/images/portrait02.png" alt=""></li>
-                    <li class="d-flex flex-column justify-content-center mb-6">
-                      <h6 class="fs-5">台南 黃小姐</h6>
-                      <div class="d-md-flex">
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                      </div>
-                    </li>
-                    <li>
-                      <p>
-                        你也是訂閱一堆平台花很多錢的人嗎？加起來真的很傷荷包。以前<span class="text-primary-600">找朋友湊團超麻煩</span>，管理帳號、收款都讓人頭痛。自從用 SubMate，<span class="text-primary-600">一鍵成團</span>、自動扣款，帳號安全還有保障。省下大筆費用，享受所有內容SubMate真的超讚！
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
-                    <li class="me-4 mb-6"><img src="../assets/images/portrait03.png" alt=""></li>
-                    <li class="d-flex flex-column justify-content-center mb-6">
-                      <h6 class="fs-5">台中 陳太太</h6>
-                      <div class="d-md-flex">
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                      </div>
-                    </li>
-                    <li>
-                      <p>
-                        訂閱費越來越高，一個人扛真的不划算，<span class="text-primary-600">湊團又麻煩還怕遇到問題</span>。我朋友推薦我用 SubMate，真的超方便！平台自動幫你找到團隊，所有分攤付款和帳號管理都幫你處理好。<span class="text-primary-600">安全、省心、省錢</span>，訂閱共享原來可以這麼輕鬆！
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+        <div class="swiper-container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="p-8 list shadow-sm d-flex flex-wrap">
+                  <li class="me-4 mb-6"><img src="../assets/images/portrait01.png" alt=""></li>
+                  <li class="d-flex flex-column justify-content-center mb-6">
+                    <h6 class="fs-5 mb-3">台北 張先生</h6>
+                    <div class="d-flex">
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="fs-6">
+                      最近發現 SubMate 超好用！現在訂閱 Netflix、Disney+、Spotify <span class="text-primary-600">一個人真的太貴</span>，自己找人湊團又麻煩還容易出問題。 SubMate 幫你<span class="text-primary-600">快速找到可靠團員</span>，自動處理付款，還有帳號安全保障。省錢、省心又方便，訂閱共享就用 SubMate！
+                    </p>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-md-flex gap-3">
-                <div>
-                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
-                    <li class="me-4 mb-6"><img src="../assets/images/portrait01.png" alt=""></li>
-                    <li class="d-flex flex-column justify-content-center mb-6">
-                      <h6 class="fs-5">台北 張先生</h6>
-                      <div class="d-md-flex">
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                      </div>
-                    </li>
-                    <li>
-                      <p>
-                        最近發現 SubMate 超好用！現在訂閱 Netflix、Disney+、Spotify <span class="text-primary-600">一個人真的太貴</span>，自己找人湊團又麻煩還容易出問題。 SubMate 幫你<span class="text-primary-600">快速找到可靠團員</span>，自動處理付款，還有帳號安全保障。省錢、省心又方便，訂閱共享就用 SubMate！
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
-                    <li class="me-4 mb-6"><img src="../assets/images/portrait02.png" alt=""></li>
-                    <li class="d-flex flex-column justify-content-center mb-6">
-                      <h6 class="fs-5">台南 黃小姐</h6>
-                      <div class="d-md-flex">
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                      </div>
-                    </li>
-                    <li>
-                      <p>
-                        你也是訂閱一堆平台花很多錢的人嗎？加起來真的很傷荷包。以前<span class="text-primary-600">找朋友湊團超麻煩</span>，管理帳號、收款都讓人頭痛。自從用 SubMate，<span class="text-primary-600">一鍵成團</span>、自動扣款，帳號安全還有保障。省下大筆費用，享受所有內容SubMate真的超讚！
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul class="p-8 list shadow-sm d-md-flex flex-wrap">
-                    <li class="me-4 mb-6"><img src="../assets/images/portrait03.png" alt=""></li>
-                    <li class="d-flex flex-column justify-content-center mb-6">
-                      <h6 class="fs-5">台中 陳太太</h6>
-                      <div class="d-md-flex">
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                        <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
-                      </div>
-                    </li>
-                    <li>
-                      <p>
-                        訂閱費越來越高，一個人扛真的不划算，<span class="text-primary-600">湊團又麻煩還怕遇到問題</span>。我朋友推薦我用 SubMate，真的超方便！平台自動幫你找到團隊，所有分攤付款和帳號管理都幫你處理好。<span class="text-primary-600">安全、省心、省錢</span>，訂閱共享原來可以這麼輕鬆！
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+              <div class="swiper-slide">
+                <ul class="p-8 list shadow-sm d-flex flex-wrap">
+                  <li class="me-4 mb-6"><img src="../assets/images/portrait02.png" alt=""></li>
+                  <li class="d-flex flex-column justify-content-center mb-6">
+                    <h6 class="fs-5 mb-3">台南 黃小姐</h6>
+                    <div class="d-flex">
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="fs-6">
+                      你也是訂閱一堆平台花很多錢的人嗎？加起來真的很傷荷包。以前<span class="text-primary-600">找朋友湊團超麻煩</span>，管理帳號、收款都讓人頭痛。自從用 SubMate，<span class="text-primary-600">一鍵成團</span>、自動扣款，帳號安全還有保障。省下大筆費用，享受所有內容SubMate真的超讚！
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="p-8 list shadow-sm d-flex flex-wrap">
+                  <li class="me-4 mb-6"><img src="../assets/images/portrait03.png" alt=""></li>
+                  <li class="d-flex flex-column justify-content-center mb-6">
+                    <h6 class="fs-5 mb-3">台中 陳太太</h6>
+                    <div class="d-flex">
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                      <div class="me-1"><img src="../assets/images/kid_star.svg" alt=""></div>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="fs-6">
+                      訂閱費越來越高，一個人扛真的不划算， <span class="text-primary-600">湊團又麻煩還怕遇到問題</span>。我朋友推薦我用 SubMate，真的超方便！平台自動幫你找到團隊，所有分攤付款和帳號管理都幫你處理好。<span class="text-primary-600">安全、省心、省錢</span>，訂閱共享原來可以這麼輕鬆！
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -234,5 +183,33 @@
 
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>  
+    <script>       
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          // 0px ~ 767px：手機
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          // 768px ~ 1023px：平板
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        }
+      });     
+    </script>
   </body>
 </html>
