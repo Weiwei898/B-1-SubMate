@@ -63,201 +63,197 @@
     <!--購物車確認步驟-->
     <section class="d-flex flex-column gap-6 mb-10">
         <!--結帳內容-->
-        <div class="container bg-neutral-0 shadow-sm rounded px-6 py-10">
-            <!--表格：商品列-->
-            <div class="row">
-                <div class="col-12">                        
-                    <table class="table table-hover">
-                        <thead>
-                            <tr class="align-middle">
-                                <th scope="col" class="text-center">產品名稱</th>
-                                <th scope="col" class="text-center">方案</th>
-                                <th scope="col" class="text-center">數量</th>
-                                <th scope="col" class="text-center">小計(新台幣)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="align-middle"> <!--垂直置中-->
-                                <th scope="col"><!--包含商品勾選--->
-                                    <div class="form-check d-flex gap-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="cart-product01" checked disabled>
-                                        <label for="cart-product01">
-                                            Netfilx
-                                        </label>
-                                    </div>
-                                </th>
-                                <th scope="col" class="text-center">基本​方案</th>
-                                <th scope="col" class="d-flex justify-center"><!--純數值--->
-                                    <div class="number-control d-flex align-items-center gap-3">
-                                        <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button"  disabled>-</button>
-                                        <input type="number" class="form-control text-center" number-input value="2" min="0" max="99" disabled>    
-                                        <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button"  disabled>+</button>
-                                    </input>
-                                </th><!--數值增減元件--->
-                                <th scope="col" class="text-end">$4,800</th>
-                            </tr>
-                            
-                            <tr class="align-middle"> <!--垂直置中-->
-                                <th scope="col"><!--包含商品勾選--->
-                                    <div class="form-check d-flex gap-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="cart-product02" checked disabled>
-                                        <label for="cart-product02">
-                                            Youtube Premium
-                                        </label>
-                                    </div>
-                                </th>
-                                <th scope="col" class="text-center">一個月</th>
-                                <th scope="col" class="d-flex justify-center"><!--數值增減元件--->
-                                    <div class="number-control d-flex align-items-center gap-3">
-                                        <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button"  disabled>-</button>
-                                        <input type="text" class="form-control text-center number-input" value="1" min="0" max="99" disabled>    
-                                        <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button"  disabled>+</button>
-                                    </div>
-                                </th><!--數值增減元件--->
-                                <th scope="col" class="text-end">$180</th>
-                            </tr>
-                            
+        <div class="container">
+            <div class="white-board bg-neutral-0 shadow-sm rounded px-12 py-10"> <!--白板放這才能跟footer對齊-->
+                <!--表格：商品列-->
+                <div class="row">
+                    <div class="col-12">                        
+                        <table class="table table-hover">
+                            <thead>
+                                <tr class="align-middle">
+                                    <th scope="col" class="text-center">產品名稱</th>
+                                    <th scope="col" class="text-center">方案</th>
+                                    <th scope="col" class="text-center">數量</th>
+                                    <th scope="col" class="text-center">小計(新台幣)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle"> <!--垂直置中-->
+                                    <th scope="col"><!--包含商品勾選--->
+                                        <div class="form-check d-flex gap-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="cart-product01" checked disabled>
+                                            <label for="cart-product01">
+                                                Netfilx
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="text-center">基本​方案</th>
+                                    <th scope="col" class="d-flex justify-center"><!--純數值--->
+                                        <div class="number-control d-flex align-items-center gap-3">
+                                            <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button"  disabled>-</button>
+                                            <input type="number" class="form-control text-center" number-input value="2" min="0" max="99" disabled>    
+                                            <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button"  disabled>+</button>
+                                        </input>
+                                    </th><!--數值增減元件--->
+                                    <th scope="col" class="text-end">$4,800</th>
+                                </tr>
+                                
+                                <tr class="align-middle"> <!--垂直置中-->
+                                    <th scope="col"><!--包含商品勾選--->
+                                        <div class="form-check d-flex gap-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="cart-product02" checked disabled>
+                                            <label for="cart-product02">
+                                                Youtube Premium
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="text-center">一個月</th>
+                                    <th scope="col" class="d-flex justify-center"><!--數值增減元件--->
+                                        <div class="number-control d-flex align-items-center gap-3">
+                                            <button class="btn btn-primary rounded-circle p-0 decrement-btn" type="button"  disabled>-</button>
+                                            <input type="text" class="form-control text-center number-input" value="1" min="0" max="99" disabled>    
+                                            <button class="btn btn-primary rounded-circle p-0 increment-btn"  type="button"  disabled>+</button>
+                                        </div>
+                                    </th><!--數值增減元件--->
+                                    <th scope="col" class="text-end">$180</th>
+                                </tr>
+                                
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
 
-            <!--小計--->
-            <div class="row d-flex justify-end">
-                <div class="col-4" >
-                    <table class="table cart-total table-borderless">
-                        <tr>
-                            <th class="text-end">總計金額 </th>
-                            <th class="text-start"> NT$</th>
-                            <th class="text-end">4,980 元</th>
-                        </tr>
+                <!--小計--->
+                <div class="row d-flex justify-end">
+                    <div class="col-4" >
+                        <table class="table cart-total table-borderless">
+                            <tr>
+                                <th class="text-end">總計金額 </th>
+                                <th class="text-start"> NT$</th>
+                                <th class="text-end">4,980 元</th>
+                            </tr>
 
-                        <tr>
-                            <th class="text-end">折扣總金額 </th>
-                            <th class="text-start"> NT$</th>
-                            <th class="text-end">-100 元</th>
-                        </tr>
+                            <tr>
+                                <th class="text-end">折扣總金額 </th>
+                                <th class="text-start"> NT$</th>
+                                <th class="text-end">-100 元</th>
+                            </tr>
 
-                        <tr>
-                            <th class="text-end">總付款 </th>
-                            <th class="text-start"> NT$</th>
-                            <th class="text-end">4,980 元</th>
-                        </tr>
-                    </table>
+                            <tr>
+                                <th class="text-end">總付款 </th>
+                                <th class="text-start"> NT$</th>
+                                <th class="text-end">4,980 元</th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-                    
+            </div>        
         </div><!--結帳內容container-->
 
     </section><!--購物車確認步驟-->
 
-    <section  class="d-flex flex-column gap-6 mb-10"><!--設定付款方式-->
-        <div class="container bg-neutral-0 shadow-sm rounded px-6 py-10 ">
-            <!--小標題-->
-            <div class="row mb-10">
-                <div class="col-12">                        
-                    <h3>設定付款方式</h3>
-                </div>
-            </div>  
-            
-            <!--付款方式細節-->
-            <div class="row">
-                <div class="col-12">
-                    <ol class="d-flex flex-column gap-2 mb-4">
-                        <li class="d-flex justify-between align-items-center py-2">
-                            <div class="form-check d-flex gap-3 align-items-center">
-                                <input class="form-check-input" type="radio" value="" name = "payment-select" id="payment01"  aria-describedby="payment01-text"  checked>
-                                <label for="payment01" class="fs-5 fw-bold">
-                                    信用卡
-                                </label>
-                                <div id="payment01-text" class="form-text">12xx xxxx xxxx 9633</div>
-                            </div>
-                            <div>
-                                <a href="#"><img src="../assets/images/trash-2.svg" alt="刪除鍵"></a>
-                            </div>
-                        </li>
-                        
-                        <li class="d-flex justify-between align-items-center py-2">
-                            <div class="form-check d-flex gap-3 align-items-center">
-                                <input class="form-check-input" type="radio" value="" id="payment02" name = "payment-select"  aria-describedby="payment02-text"  >
-                                <label for="payment02" class="fs-5 fw-bold">
-                                    ATM匯款
-                                </label>
-                                <div id="payment02-text" class="form-text text-danger">
-                                    ※尚未完成付款，請於【結帳完成頁面】或【訂單紀錄】確認匯款資訊
+    <section  id = 'payment-setting' class="d-flex flex-column gap-6 mb-10"><!--設定付款方式-->
+        <div class="container ">
+            <div class="white-board bg-neutral-0 shadow-sm rounded px-12 py-10"> <!--白板放這才能跟footer對齊-->
+                <!--小標題-->
+                <div class="row mb-10">
+                    <div class="col-12">                        
+                        <h3>設定付款方式</h3>
+                    </div>
+                </div>  
+                
+                <!--付款方式細節-->
+                <div class="row">
+                    <div class="col-12">
+                        <ol class="d-flex flex-column gap-2 mb-4">
+                            <li class="d-flex justify-between align-items-center py-2">
+                                <div class="form-check d-flex gap-3 align-items-center">
+                                    <input class="form-check-input" type="radio" value="" name = "payment-select" id="payment01"  aria-describedby="payment01-text"  checked>
+                                    <label for="payment01" class="fs-5 fw-bold">
+                                        信用卡
+                                    </label>
+                                    <div id="payment01-text" class="form-text">12xx xxxx xxxx 9633</div>
                                 </div>
-                            </div>
-                            <div>
-                                <a href="#"><img src="../assets/images/trash-2.svg" alt="刪除鍵"></a>
-                            </div>
-                        </li>
-                    </ol>
+                                <div>
+                                    <a href="#"><img src="../assets/images/trash-2.svg" alt="刪除鍵"></a>
+                                </div>
+                            </li>
+                            
+                            <li class="d-flex justify-between align-items-center py-2">
+                                <div class="form-check d-flex gap-3 align-items-center">
+                                    <input class="form-check-input" type="radio" value="" id="payment02" name = "payment-select"  aria-describedby="payment02-text"  >
+                                    <label for="payment02" class="fs-5 fw-bold">
+                                        ATM匯款
+                                    </label>
+                                    <div id="payment02-text" class="form-text text-danger">
+                                        ※尚未完成付款，請於【結帳完成頁面】或【訂單紀錄】確認匯款資訊
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#"><img src="../assets/images/trash-2.svg" alt="刪除鍵"></a>
+                                </div>
+                            </li>
+                        </ol>
 
-                    <!--新增付款方式按鈕-->
-                    <button type="button" class="  btn btn-outline-success">
-                        <a href="#" role="button">新增付款方式</a>
-                        <div></div>
-                    </button>
+                        <!--新增付款方式按鈕-->
+                        <div class="col-2">
+                            <a href="#" class="  btn btn-outline-success" role="button">新增付款方式</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </div><!--付款方式container-->
     </section><!--設定付款方式-->
 
     <section  class="d-flex flex-column gap-6 mb-10"><!--結帳資訊-->
-        <div class="container bg-neutral-0 shadow-sm rounded px-6 py-10">
-            <!--小標題-->
-            <div class="row mb-10">
-                <div class="col-12">                        
-                    <h3>結帳資訊</h3>
-                </div>
-            </div>       
+        <div class="container">
+            <div class="white-board bg-neutral-0 shadow-sm rounded px-12 py-10"> <!--白板放這才能跟footer對齊-->
+                <!--小標題-->
+                <div class="row mb-10">
+                    <div class="col-12">                        
+                        <h3>結帳資訊</h3>
+                    </div>
+                </div>       
 
-            <div class="row">
-                <div class="col-12">
-                    <form class="d-flex flex-column gap-2">
-                        <div class="d-flex py-2">
-                            <p class="col-1 text-justify ">姓名：</p>
-                            <p class="col-6 ">布萊斯</p>
-                        </div>
-                        <div class="d-flex py-2">
-                            <p class="col-1 ">電子郵件：</p>
-                            <p class="col-6 ">bulai@gmail.com</p>
-                        </div>
-                        <div class="d-flex py-2">
-                            <p class="col-1 ">手機號碼：</p>
-                            <p class="col-6 ">0987-654-321</p>
-                        </div>
-                        <div class="form-group d-flex  align-items-center py-2">
-                            <label for="bill-address" class="col-1 control-label" id="bill-address">帳單地址：</label>
-                            <input type="text" class="form-control  required-field" id="bill-address" value="台北市大安區新生南路一段223號"
-                                placeholder="請輸入帳單地址">
-                        </div>
-                        <div class="form-group d-flex align-items-center py-2">
-                            <label for="payment-term-input" class="col-1 control-label " id="payment-term">付款方式：</label>
-                            <input type="text" class="form-control" id="payment-term-input" value="ATM" disabled>
-                        </div>
-            
-                    </form>
+                <div class="row">
+                    <div class="col-12">
+                        <form class="d-flex flex-column gap-2">
+                            <div class="d-flex py-2">
+                                <p class="col-1 text-justify ">姓名：</p>
+                                <p class="col-6 ">布萊斯</p>
+                            </div>
+                            <div class="d-flex py-2">
+                                <p class="col-1 ">電子郵件：</p>
+                                <p class="col-6 ">bulai@gmail.com</p>
+                            </div>
+                            <div class="d-flex py-2">
+                                <p class="col-1 ">手機號碼：</p>
+                                <p class="col-6 ">0987-654-321</p>
+                            </div>
+                            <div class="form-group d-flex  align-items-center py-2">
+                                <label for="bill-address" class="col-1 control-label" id="bill-address">帳單地址：</label>
+                                <input type="text" class="form-control  required-field" id="bill-address" value="台北市大安區新生南路一段223號"
+                                    placeholder="請輸入帳單地址">
+                            </div>
+                            <div class="form-group d-flex align-items-center py-2">
+                                <label for="payment-term-input" class="col-1 control-label " id="payment-term">付款方式：</label>
+                                <input type="text" class="form-control" id="payment-term-input" value="ATM" disabled>
+                            </div>
+                
+                        </form>
+                    </div>
                 </div>
             </div>
             
-            
         </div><!--付款方式container-->
 
-                <!--按鈕-->
+        <!--按鈕-->
         <div class="container d-flex justify-end gap-4">
             <!--上一步-->
-            <button type="button" class="  btn btn-outline-success">
-                <a href="cart_list.html" role="button">上一步</a>
-                <div></div>
-            </button>
+            <a href="cart_list.html#cart-list-form" class="btn btn-outline-success" role="button">上一步</a>
             <!--下一步-->
-            <button type="button" class="next-step  btn btn-primary-600" id= "checkout-button"> 
-                <a href="#" role="button">結帳完成</a>
-                <div></div>
-            </button>
+            <a href="cart_finish.html#cart-finish-section" class="next-step  btn btn-primary-600" id= "checkout-button" role="button">結帳完成</a>
         </div><!--按鈕-->
     </section><!--結帳資訊-->
 
