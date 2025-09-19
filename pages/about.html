@@ -179,7 +179,7 @@
               <div class="col-6 col-md-3 d-flex flex-column text-center gap-3 gap-md-4">
                 <div class="portrait-frame2">
                   <div class="inner">
-                    <img src="../assets/images/portrait.svg" alt="Portrait">
+                    <img src="../assets/images/portrait_girl1.svg" alt="Portrait">
                   </div>
                 </div>
                 <h5 class="member-name">布萊斯</h5>
@@ -189,7 +189,7 @@
               <div class="col-6 col-md-3 d-flex flex-column text-center gap-3 gap-md-4">
                 <div class="portrait-frame2">
                   <div class="inner">
-                    <img src="../assets/images/portrait.svg" alt="Portrait">
+                    <img src="../assets/images/portrait_girl2.svg" alt="Portrait">
                   </div>
                 </div>
                 <h5 class="member-name">Lika</h5>
@@ -211,45 +211,20 @@
       </div><!--團隊成員 container-->
     </section> <!--發想理念與沿革test2-->
 
-    <!--首頁B/A--->
-    <section class="py-10 py-md-13">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            
-            
-          </div>
-        </div>
+
+    <!--首頁Before/After--->
+    <%- include('./layout/brand_story'); -%>
+
+    <!--首頁品牌特色-->
+    <%- include('./layout/brand_feature'); -%>
+
+    <!--Call to Action按鈕-->
+    <div class="container mt-0 mt-md-2 mb-10 mb-md-13">
+      <div class="d-flex justify-center">
+          <a href="product_list.html" class="cta-btn btn btn-primary-600 py-4 px-6 fw-bold">立即查看熱門產品</a>
       </div>
-    </section><!--首頁B/A--->
-
-    <!--sumbmate+ CTA--->
-    <section class="py-10 py-md-13">
-      <div class="container">
-        <!--row為什麼選擇sumbat+ CTA--->
-        <div class="row">
-          <div class="col-12">
-            <!--標題與logo-->
-            <div class="title-container d-flex align-items-center gap-3 ">
-              <div class="title-logo d-flex align-items-center"></div>
-              <div class="title-text">
-                <h3 class="text-center">為什麼要選擇Sumbat</h3>
-              </div>
-              <div class="title-logo d-flex align-items-center"></div>
-            </div>
-      
-            <!--CTA BTN-->
-            <div class="cta-btn d-flex justify-between mt-6 mt-md-10">
-              <button class="btn btn-primary-600 py-4 px-6 round-100">
-                <h6>立即查看熱門產品</h6>
-              </button>
-            </div>
-          </div>
-        </div><!--row為什麼選擇sumbat+ CTA--->
-      </div>
-    </section><!--sumbmate+ CTA--->
-
-
+    </div><!--按鈕-->
+   
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

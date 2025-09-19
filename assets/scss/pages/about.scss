@@ -779,16 +779,17 @@ li.time06 {
 +++++++++++++++++++++++*/
 
 
-.cta-btn {
-    justify-content: center;
-}
 
-button.btn-primary-600 {
-    border-radius: 100px;
+a.cta-btn.btn-primary-600 {
+    display: block;
+    border-radius: 1000px;
     color: $neutral-0;
 
-    &:hover {
-        background-color: $primary-500;
+
+    &:hover,
+    &:active,
+    &:link,
+    &:visited {
         color: $neutral-0;
     }
 }
