@@ -1,24 +1,46 @@
-.index-title {
-  font-size: 100px;
+
+.index-btn{
+  padding: 16px 24px;
+  border-radius: 100px;
 }
 
+.main-btn{
+  background-color: $primary-600;
+}
+
+.main-btn:hover{
+  background-color: $primary-500;
+}
+
+.sub-btn{
+  background-color: $neutral-0;
+  border-color:$secondary-700 ;
+}
+
+.sub-btn:hover{
+  background-color: $secondary-700;
+  color: $neutral-0;
+}
+
+
+/*section index-banner-bg*/
 .index-banner-bg{
   padding: 0 12px 40px 12px;
   box-sizing: border-box;
   position: relative;
 }
 
-.index-banner{
+.index-banner-bg .index-banner{
   border-radius: 24px;
   overflow: hidden;
   width: 100%;
 }
 
-.index-banner img{
+.index-banner-bg .index-banner img{
   width: 100%;
 }
 
-.index-banner-infoBox{
+.index-banner-bg .index-banner-infoBox{
   position: absolute;
   top: 120px;
   left: 50%;
@@ -29,21 +51,23 @@
   text-align: center;
 }
 
-.index-banner-infoBox .logo{
+.index-banner-bg .index-banner-infoBox .logo{
   width: 320px;
   display: none;
 }
 
-.index-banner-infoBox .h1{
+.index-banner-bg .index-banner-infoBox .h1{
   font-size: 40px;
 }
 
-.index-btn{
-  padding: 16px 24px;
-  border-radius: 100px;
-}
 
-.index-news-bg{
+
+
+/*section index-news-bg*/
+.index-news-carousel{
+  margin-bottom: 180px;
+}
+.index-news-carousel .index-news-bg{
   background-color: rgba(255, 255, 255, 0.6);
   border: 3px solid #fff;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
@@ -73,51 +97,16 @@
   bottom: -60px;
 }
 
-.carousel-indicators [data-bs-target]{
+.index-news-carousel .carousel-indicators [data-bs-target]{
   width: 12px;
   height: 6px;
   border-radius: 12px;
   border: none;
 }
 
-.index-share-carousel .list{
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 0;
-  border-radius: 24px;
-}
-
-.index-share-carousel .list li{
-  list-style-type: none;
-}
-
-.index-share-carousel .carousel-control-prev-icon{
-  background-image: url(../assets/icons/arrow_back.svg);
-}
-.index-share-carousel .carousel-control-next-icon{
-  background-image: url(../assets/icons/arrow_forward.svg);
-}
-
-.index-share-carousel .carousel-control-next{
-  right: -200px;
-}
-.index-share-carousel .carousel-control-prev{
-  left: -200px;
-}
-
+/*swiper 共同修改區*/
 .swiper-container{
   position: relative;
-}
-
-.swiper-container .mySwiper .list{
-  padding: 0;
-}
-
-.swiper-container .mySwiper .list li{
-  list-style-type: none;
-}
-
-.swiper-container .mySwiper .list li p{
-  text-align: justify;
 }
 
 .swiper-container .swiper-button-next,
@@ -173,15 +162,73 @@
   border-radius: 12px;
 }
 
+.swiper-slide{
+  background: transparent;
+}
+
+
+/*swiper 個別設定*/
+.swiper-container .hotProduct .list,
+.swiper-container .mySwiper .list{
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 10px;
+  border-radius: 24px;
+}
+
+.swiper-container .hotProduct .list li,
+.swiper-container .mySwiper .list li{
+  list-style-type: none;
+}
+
+.swiper-container .hotProduct .list li p,
+.swiper-container .mySwiper .list li p{
+  text-align: justify;
+}
+
+
+/*section index-product-bg*/
+.index-product-bg{
+  margin-bottom: 60px;
+}
+
+.index-product-bg .card{
+  width: 100%;
+  min-height: 500px;
+  margin: 10px;
+}
+
+
+/*section index-search-bg*/
+.index-search-bg{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.index-search-bg .icon{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.index-search-bg input{
+  padding-left: 40px;
+}
+
+
+
+
 @media (min-width:768px){
   .index-banner-bg{
     padding: 0 40px 40px 40px;
   }
 
-  .index-banner-infoBox .fs-md-display{
+  .index-banner-bg .index-banner-infoBox .fs-md-display{
     font-size: 56px;
   }
-  .index-banner-infoBox{
+  .index-banner-bg .index-banner-infoBox{
     top: 200px;
     left: 120px;
     transform: translate(0,0);
@@ -189,13 +236,13 @@
     padding: 0;
     text-align: left;
   }
-  .index-banner-infoBox .logo{
+  .index-banner-bg .index-banner-infoBox .logo{
     display: block;
   }
-  .index-banner{
+  .index-banner-bg .index-banner{
     width: initial;
   }
-  .index-banner img{
+  .index-banner-bg .index-banner img{
     width: initial;
   }
   .index-news-carousel .carousel-control-next{
@@ -208,10 +255,13 @@
   .swiper-container .swiper-button-next{
     display: flex;
   }
+  .index-search-bg{
+    width: 416px;
+  }
 }
 
 @media (min-width:1400px){
-  .index-banner-infoBox{
+  .index-banner-bg .index-banner-infoBox{
     left: 272px;
   }
 }
