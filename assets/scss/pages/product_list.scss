@@ -3,6 +3,7 @@
 	/*outline: solid 1px;測試範圍用*/
 }
 
+<<<<<<< HEAD
 .py-120.py-120 {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -152,6 +153,8 @@
 
 
 /* ===== 卡片用===== */
+=======
+>>>>>>> origin/main
 #catalogFilters {
   .nav-link {
     /*清空原有hover active樣式*/
@@ -173,6 +176,7 @@
   .nav-link:focus svg path,
   .nav-link.active svg path { fill: url(#grad-01) !important; }
 }
+
 
 .btn-effect {
   /*清空原有hover active樣式*/
@@ -203,148 +207,4 @@
     $gradient-01;
   background-origin: border-box;
   background-clip: padding-box, border-box;
-}
-
-
-/* ===== Base特別font-size ===== ex.fs-56 fs-md-56*/
-$spacer: 16px; // 1 單位=16px
-
-/* 斷點 */
-$bps: (sm:576px, md:768px, lg:992px, xl:1200px, xxl:1400px);
-
-/* ===== 固定字級工具（不啟用 RFS） ===== */
-/* 想要哪些固定 px 值就填進來 */
-$fs-fixed: (56);
-
-@each $px in $fs-fixed {
-  .fs-#{$px} { font-size: #{$px}px !important; } //// !important會影響權重，要小心使用，因為要蓋過bootstrap預設及以自訂的fint-sizeRWD必需
-  @each $bp, $min in $bps {
-    @media (min-width: $min) {
-      .fs-#{$bp}-#{$px} { font-size: #{$px}px !important; } //// !important會影響權重，要小心使用，因為要蓋過bootstrap預設及以自訂的fint-sizeRWD必需
-    }
-  }
-}
-
-/* ===== 間距工具（m/mt/ms/me/mb/mx/my 與 p/pt/pe/pb/ps/px/py）===== */
-/* 這裡用「$spacer 的倍數」來產生，56px=3.5*16px */
-$custom-spacers: (
-  56: 3.5, // 56px
-  // 想加就繼續：72: 4.5, 96: 6, ...
-);
-
-/* 要產的目標屬性集合 */
-$space-targets: (
-  m:  (margin),
-  mt: (margin-top),
-  me: (margin-inline-end),
-  mb: (margin-bottom),
-  ms: (margin-inline-start),
-  mx: (margin-left, margin-right),
-  my: (margin-top,  margin-bottom),
-  p:  (padding),
-  pt: (padding-top),
-  pe: (padding-inline-end),
-  pb: (padding-bottom),
-  ps: (padding-inline-start),
-  px: (padding-left, padding-right),
-  py: (padding-top,  padding-bottom)
-);
-
-/* 寫入一組（含 m/mt/.../py） */
-@mixin write-space($suffix, $value) {
-  @each $abbr, $props in $space-targets {
-    .#{$abbr}-#{$suffix} {
-      @each $prop in $props { #{$prop}: $value; }  //必要時才加 !important
-    }
-  }
-}
-
-/* 產生基礎 + RWD 版本（.mb-56、.mb-md-56…） */
-@each $name, $mult in $custom-spacers {
-  $val: $spacer * $mult; // 例如 3.5*16px = 56px
-
-  /* base：.m-56 / .px-56 ... */
-  @include write-space($name, $val);
-
-  /* responsive：.m-sm-56 / .px-lg-56 ... */
-  @each $bp, $min in $bps {
-    @media (min-width: $min) {
-      @include write-space(#{$bp}-#{$name}, $val);
-    }
-  }
-}
-
-//立體img
-/* ===== 立體 img（純靜態）======================================= */
-
-/* 放 3D 透視在容器（數字越小透視越強、立體感越誇張） */
-.brand-logos{ 
-  perspective: 800px; /* 可改 600 / 1000 依需求 */
-}
-
-/* 每個項目開 3D 堆疊，並設「預設角度/景深」用 CSS 變數 */
-.brand-logos li{
-  position: relative;                 /* 給偽元素定位用 */
-  transform-style: preserve-3d;       /* 讓子層保留 3D 變換 */
-  /* ↓↓↓ 靜態角度/景深（主要在這三個值上做調整） */
-  --rx: 8deg;                         /* 往前仰角：+ 往下看、- 往上看 */
-  --ry: -10deg;                       /* 左右扭轉：- 向左、+ 向右 */
-  --tz: 14px;                         /* 往鏡頭前推，數字越大越凸出 */
-}
-
-/* 圖本體：套 3D 變換 + 投影 */
-.brand-logos img{
-  display: block;                     /* 消除行內間隙 */
-  height: 48px;                       /* 控制 logo 高度 */
-  width: auto;                        /* 等比例縮放 */
-  transform-origin: 50% 60%;          /* 旋轉中心（稍微靠下更像立體牌） */
-  transform:
-    rotateX(var(--rx))                /* 依上面變數旋轉 X 軸 */
-    rotateY(var(--ry))                /* 依上面變數旋轉 Y 軸 */
-    translateZ(var(--tz));            /* 依上面變數前推 */
-  /* transition: none; */             /* 靜態可直接關閉過場 */
-  will-change: transform;             /* 保險：讓瀏覽器優化此屬性 */
-  /* 投影：數值越大越厚重（Y位移 | 模糊 | 透明度） */
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,.22));
-}
-
-/* 地面陰影：放在圖下方，讓「浮起來」更可信 */
-.brand-logos li::after{
-  content:"";
-  position:absolute;
-  left:5%; right:5%;                /* 陰影寬度，可收窄讓它更集中 */
-  bottom:-4px;                        /* 陰影與圖底的距離 */
-  height:12px;                        /* 陰影厚度（越高越模糊） */
-  /* 徑向漸層做橢圓陰影：第一段內側黑、外圈透明 */
-  background: radial-gradient(50% 60% at 50% 50%,
-              rgba(0,0,0,.35), transparent 70%);
-  transform: translateZ(-1px) scale(1); /* 往後一點，避免蓋到圖 */
-  opacity:.55;                          /* 整體陰影強度 */
-  /* transition: none; */                /* 靜態不需要過場 */
-  pointer-events:none;                   /* 不擋滑鼠 */
-}
-
-/* 高光：斜向一道亮帶，模擬面板反光 */
-.brand-logos li::before{
-  content:"";
-  position:absolute;
-  inset:-20px;                           /* 高光覆蓋範圍（可縮小） */
-  /* 斜角白色漸層（位置比例可改，越高越亮） */
-  background: linear-gradient(135deg,
-              rgba(255,255,255,.00) 10%,
-              rgba(255,255,255,.35) 50%,
-              rgba(255,255,255,0) 70%);
-  transform: translateZ(1px) rotate(-1deg); /* 稍微傾斜更像光帶 */
-  opacity:0.5;                              /* 高光強度（0~1） */
-  /* transition: none; */                   /* 靜態不需要過場 */
-  pointer-events:none;                      /* 不擋滑鼠 */
-}
-
-/* 使用者偏好「減少動態」時，不做任何過場（雖然上面關了，留著當最佳實踐） */
-@media (prefers-reduced-motion: reduce){
-  .brand-logos *{ transition:none !important; }
-}
-
-@media (min-width: 768px){
-  .brand-logos img{ height:80px; }
 }
