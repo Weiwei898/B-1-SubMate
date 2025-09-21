@@ -23,10 +23,10 @@ $submate-breakpoints: (
   @media (min-width: $min) {
     // h?-{bp} 與 fs-{bp}-?
     @each $k, $mult in $submate-type-scale {
-      .h#{$k}-#{$bp}  { font-size: smt-size($mult) !important; }
-      .fs-#{$bp}-#{$k}{ font-size: smt-size($mult) !important; }
+      .h#{$k}-#{$bp}  { font-size: smt-size($mult) !important; } // !important會影響權重，要小心使用，因為要蓋過bootstrap預設必需
+      .fs-#{$bp}-#{$k}{ font-size: smt-size($mult) !important; } // !important會影響權重，要小心使用，因為要蓋過bootstrap預設必需
     }
     // small-{bp}
-    .small-#{$bp} { font-size: smt-size(.875) !important; }
+    .small-#{$bp} { font-size: smt-size(.875) !important; } // !important會影響權重，要小心使用，因為要蓋過bootstrap預設必需
   }
 }

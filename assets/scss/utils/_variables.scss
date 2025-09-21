@@ -361,6 +361,11 @@ $gradient-01: linear-gradient(to left,  #1EDFAD, #11A7ED, #9738F5);
 $gradient-02: linear-gradient(to left,  #FFD93F, #ED8E11, #FF4040);
 $gradient-01-reverse: linear-gradient(to right, #1EDFAD, #11A7ED, #9738F5);
 $gradient-02-reverse: linear-gradient(to right,#FFD93F, #ED8E11, #FF4040);
+/* 上→下（to bottom）與下→上（to top） */
+$gradient-01-vertical:        linear-gradient(to bottom, #1EDFAD, #11A7ED, #9738F5);
+$gradient-01-vertical-reverse:linear-gradient(to top,    #1EDFAD, #11A7ED, #9738F5);
+$gradient-02-vertical:        linear-gradient(to bottom, #FFD93F, #ED8E11, #FF4040);
+$gradient-02-vertical-reverse:linear-gradient(to top,    #FFD93F, #ED8E11, #FF4040);
 
 /* 小區塊也顯色：用 px 停駐點 */
 $gradient-dyn-01: linear-gradient(90deg,
@@ -374,13 +379,36 @@ $gradient-dyn-02: linear-gradient(90deg,
   #FF4040  calc(var(--grad-step) * 2)
 );
 
+/* 動態垂直版（上→下 = 180deg） */
+$gradient-dyn-01-vertical: linear-gradient(
+  180deg,
+  #1EDFAD 0,
+  #11A7ED var(--grad-step),
+  #9738F5 calc(var(--grad-step) * 2)
+);
+
+$gradient-dyn-02-vertical: linear-gradient(
+  180deg,
+  #FFD93F 0,
+  #ED8E11 var(--grad-step),
+  #FF4040  calc(var(--grad-step) * 2)
+);
+
 $gradients: (
   gradient-01:           $gradient-01,
   gradient-02:           $gradient-02,
   gradient-01-reverse:   $gradient-01-reverse,
   gradient-02-reverse:   $gradient-02-reverse,
   gradient-dyn-01:       $gradient-dyn-01, /* 推薦給短字、小按鈕 */
-  gradient-dyn-02:       $gradient-dyn-02
+  gradient-dyn-02:       $gradient-dyn-02,
+  /*垂直版*/
+  gradient-01-vertical:           $gradient-01-vertical,
+  gradient-02-vertical:           $gradient-02-vertical,
+  gradient-01-vertical-reverse:   $gradient-01-vertical-reverse,
+  gradient-02-vertical-reverse:   $gradient-02-vertical-reverse,
+  gradient-dyn-01-vertical:       $gradient-dyn-01-vertical,
+  gradient-dyn-02-vertical:       $gradient-dyn-02-vertical
+  
 ) !default;
 
 /* ---------- 2) 產出工具類：背景 / 文字 / 邊框 ---------- */
@@ -426,6 +454,11 @@ $gradients: (
 .grad-md    { --grad-scale-x: 20%; }
 .grad-wide  { --grad-scale-x: 30%; }
 .grad-ultra { --grad-scale-x: 40%; }
+/*垂直*/
+.grad-tight-y { --grad-scale-y: 10%; }  /* 緊密 */
+.grad-md-y    { --grad-scale-y: 20%; }
+.grad-wide-y  { --grad-scale-y: 30%; }
+.grad-ultra-y { --grad-scale-y: 40%; }
 
 /* 動態漸層步距（越小越密） */
 .grad-step-40 { --grad-step: 40px; }
@@ -561,8 +594,8 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default; // submate預設縮放調整引擎可響應式的縮放大小通用
-// $enable-rfs:                  false !default; // 自訂font-size 縮放調整引擎可響應式的縮放大小通用 CSS 屬性 把預設關閉
+$enable-rfs:                  true !default; // 預設縮放調整引擎可響應式的縮放大小通用
+// $enable-rfs:                  false !default; // submate自訂font-size 縮放調整引擎可響應式的縮放大小通用 CSS 屬性 把預設關閉
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;

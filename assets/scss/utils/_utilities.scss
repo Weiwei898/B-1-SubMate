@@ -505,7 +505,8 @@ $utilities: map-merge(
       values: (monospace: var(--#{$prefix}font-monospace))
     ),
     "font-size": (
-      rfs: true,
+      // rfs: true,  //預設的 fs rfs
+      rfs: false,    //submate自訂 fs rfs false (關閉)
       property: font-size,
       class: fs,
       values: $font-sizes
