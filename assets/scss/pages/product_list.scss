@@ -3,6 +3,158 @@
 	/*outline: solid 1px;測試範圍用*/
 }
 
+<<<<<<< HEAD
+.py-120.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* 固定輪播高度：預設 720px，md(≥768px) 時 672px */
+.carousel-item.hero-veil,
+.carousel-item.hero-veil-bubbles{
+  height: 720px;
+}
+@media (min-width: 768px){
+  .carousel-item.hero-veil,
+  .carousel-item.hero-veil-bubbles{
+    height: 672px;
+  }
+}
+
+/* 讓內層內容撐滿高度（若需要垂直置中可在 container 上加 justify-content-center） */
+.carousel-item.hero-veil > .container,
+.carousel-item.hero-veil-bubbles > .container{
+  height: 100%;
+}
+
+/* ===== 彩色透明罩 + 白色橢圓高光(section輪播用) ===== */
+/* 只留這組（合併後的一份） */
+.hero-veil::before,
+.hero-veil::after { z-index: 0; }   /* 彩色罩/白橢圓放後面 */
+
+.hero-veil > * {                     /* 整個內容放前面 */
+  position: relative;
+  z-index: 1;
+}
+
+.hero-veil{
+  position: relative;
+  overflow: hidden;            /* 需要圓角裁切就留這兩行 */
+  border-radius: 24px;
+  isolation: isolate;
+
+  /* 彩色罩參數 */
+  --veil-dir: to top right;    /* 左下→右上 */
+  --veil-opacity: .3;           /* 這裡改透明度就會生效 */
+
+  /* 白色大橢圓參數（弧線以下整片白） */
+  --bowl-x: 50%;
+  --bowl-y: 130%;              /* >100% 放在容器下方，只露上緣弧線 */
+  --bowl-w: 200%;
+  --bowl-h: 120%;
+  --bowl-edge: 65%;            /* 弧線高度，越小越往上 */
+}
+
+/* 彩色透明罩 */
+.hero-veil::before{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(var(--veil-dir),
+              #9738F5 0%, #11A7ED 50%, #1EDFAD 100%);
+  opacity: var(--veil-opacity);
+  pointer-events:none;
+}
+
+/* 白色大橢圓：弧線以下白、以上透明 */
+.hero-veil::after{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(
+      var(--bowl-w) var(--bowl-h) at var(--bowl-x) var(--bowl-y),
+      rgba(255,255,255,.5) 0 var(--bowl-edge),
+      rgba(255,255,255,0) calc(var(--bowl-edge) + .1%)
+    );
+  /* 想更亮可加：mix-blend-mode: screen; */
+  pointer-events:none;
+}
+
+/* ===== 彩色透明罩 + 白色三泡泡 ===== */
+.hero-veil-bubbles::before,
+.hero-veil-bubbles::after { z-index: 0; }   /* 漸層/泡泡在底層 */
+.hero-veil-bubbles > *{ position:relative; z-index:1; } /* 內容置頂 */
+
+.hero-veil-bubbles{
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  isolation: isolate;
+
+  /* 彩色罩：左下→右上 */
+  --veil-dir: to top right;
+  --veil-opacity: .32;
+
+  /* ↓ Mobile 預設 —— 三顆泡泡位置/大小/強度 */
+  --b1-x: 14%;  --b1-y: 10%;  --b1-r: 500px; --b1-a: .55; /* 左上大 */
+  --b2-x: 95%;  --b2-y: 5%;  --b2-r: 222px; --b2-a: .45; /* 中上小 */
+  --b3-x: 70%;  --b3-y: 100%;   --b3-r: 500px; --b3-a: .40; /* 右上小 */
+}
+
+/* 彩色透明罩 */
+.hero-veil-bubbles::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background: linear-gradient(var(--veil-dir),
+              #9738F5 0%, #11A7ED 50%, #1EDFAD 100%);
+  opacity: var(--veil-opacity);
+}
+
+/* 三顆泡泡（中心透明 → 中段亮 → 外緣透明） */
+.hero-veil-bubbles::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:
+    /* 泡泡 1：左 */
+    radial-gradient(circle var(--b1-r) at var(--b1-x) var(--b1-y),
+      rgba(255,255,255,0) 0 var(--b1-i,15%),                  /* 透明中心 */
+      rgba(255,255,255,var(--b1-a,.55)) calc(var(--b1-i,28%) + 6%), /* 亮帶（可調寬度） */
+      rgba(255,255,255,0) var(--b1-o,35%)                     /* 外緣淡出 */
+    ),
+    /* 泡泡 2：中 */
+    radial-gradient(circle var(--b2-r) at var(--b2-x) var(--b2-y),
+      rgba(255,255,255,0) 0 var(--b2-i,5%),
+      rgba(255,255,255,var(--b2-a,.45)) calc(var(--b2-i,30%) + 6%),
+      rgba(255,255,255,0) var(--b2-o,35%)
+    ),
+    /* 泡泡 3：右下 */
+    radial-gradient(circle var(--b3-r) at var(--b3-x) var(--b3-y),
+      rgba(255,255,255,0) 0 var(--b3-i,15%),
+      rgba(255,255,255,var(--b3-a,.40)) calc(var(--b3-i,28%) + 6%),
+      rgba(255,255,255,0) var(--b3-o,35%)
+    );
+  background-repeat: no-repeat;
+  /* 想更亮可加：mix-blend-mode: screen; */
+}
+
+/* md↑ 位置微調（依設計稿修這些數值即可） */
+@media (min-width: 768px){
+  .hero-veil-bubbles{
+    --b1-x: 5%;  --b1-y: 40%;   --b1-r: 900px; --b1-a: .55;
+    --b2-x: 65%;  --b2-y: 10%;  --b2-r: 444px; --b2-a: .45;
+    --b3-x: 80%; --b3-y: 110%;   --b3-r: 900px; --b3-a: .40;
+  }
+}
+
+/* ===== 輪播用button===== */
+#heroDots [data-bs-slide-to]{
+  width: 8px; height: 8px; transition: all .18s ease;
+}
+#heroDots [data-bs-slide-to].px-2{
+  /* active 時會有左右 padding，寬度自然拉長成膠囊 */
+}
+
+
+/* ===== 卡片用===== */
+=======
+>>>>>>> origin/main
 #catalogFilters {
   .nav-link {
     /*清空原有hover active樣式*/
