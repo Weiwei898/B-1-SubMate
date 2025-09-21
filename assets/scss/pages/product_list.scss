@@ -142,6 +142,15 @@
   }
 }
 
+/* ===== 輪播用button===== */
+#heroDots [data-bs-slide-to]{
+  width: 8px; height: 8px; transition: all .18s ease;
+}
+#heroDots [data-bs-slide-to].px-2{
+  /* active 時會有左右 padding，寬度自然拉長成膠囊 */
+}
+
+
 /* ===== 卡片用===== */
 #catalogFilters {
   .nav-link {
