@@ -582,7 +582,13 @@
 .help-cta {
   position: relative;
   overflow: hidden;
-  background-color: white;
+  background: #fff;
+  z-index: 0;
+}
+
+.help-cta > * {
+  position: relative;
+  z-index: 1;
 }
 
 .fw-bold {
@@ -593,6 +599,28 @@
     font-size: $h3-font-size;
     margin-bottom: $spacer;
   }
+}
+
+.colorCircle1 {
+  width: 500px;
+  height: 500px;
+  background: #cdfeea;
+  filter: blur(200px);
+  border-radius: 1000px;
+  position: absolute;
+  top: -130%;
+  left: -50%;
+}
+
+.colorCircle2 {
+  width: 500px;
+  height: 500px;
+  background: #bbe6fc;
+  filter: blur(200px);
+  border-radius: 1000px;
+  position: absolute;
+  bottom: -130%;
+  right: -50%;
 }
 
 .help-blue {
