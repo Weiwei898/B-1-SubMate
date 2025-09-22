@@ -273,6 +273,11 @@
   background-clip: padding-box, border-box;
 }
 
+//標籤位置
+.badge-stytle {
+  top: 1.5%;
+  left: 1.5%;
+}
 
 /* ===== Base特別font-size ===== ex.fs-56 fs-md-56*/
 $spacer: 16px; // 1 單位=16px
