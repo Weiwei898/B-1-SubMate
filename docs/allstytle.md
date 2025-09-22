@@ -1,11 +1,22 @@
 # 通用樣式表
 
   // Submate自定義線性漸變色 text- bg- border-
-  "gradient-01": $gradient-01,
-  "gradient-02": $gradient-02,
-  "gradient-01-reverse": $gradient-01-reverse,
-  "gradient-02-reverse": $gradient-02-reverse,
-
+  gradient-01:           $gradient-01,
+  gradient-02:           $gradient-02,
+  gradient-01-reverse:   $gradient-01-reverse,
+  gradient-02-reverse:   $gradient-02-reverse,
+  gradient-dyn-01:       $gradient-dyn-01, /* 推薦給短字、小按鈕 */
+  gradient-dyn-02:       $gradient-dyn-02,
+  /*垂直版*/
+  gradient-01-vertical:           $gradient-01-vertical,
+  gradient-02-vertical:           $gradient-02-vertical,
+  gradient-01-vertical-reverse:   $gradient-01-vertical-reverse,
+  gradient-02-vertical-reverse:   $gradient-02-vertical-reverse,
+  gradient-dyn-01-vertical:       $gradient-dyn-01-vertical,
+  gradient-dyn-02-vertical:       $gradient-dyn-02-vertical,
+  /* 左下(#9738F5) → 中(#11A7ED) → 右上(#1EDFAD) */
+  gradient-01-bltr: $gradient-01-bltr
+  
   //submate放置自定義的顏色樣式 primary secondary neutral
   "primary-50": $primary-50,
   "primary-100": $primary-100,

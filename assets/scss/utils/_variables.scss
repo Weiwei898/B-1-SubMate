@@ -366,6 +366,8 @@ $gradient-01-vertical:        linear-gradient(to bottom, #1EDFAD, #11A7ED, #9738
 $gradient-01-vertical-reverse:linear-gradient(to top,    #1EDFAD, #11A7ED, #9738F5);
 $gradient-02-vertical:        linear-gradient(to bottom, #FFD93F, #ED8E11, #FF4040);
 $gradient-02-vertical-reverse:linear-gradient(to top,    #FFD93F, #ED8E11, #FF4040);
+/* 左下(#9738F5) → 中(#11A7ED) → 右上(#1EDFAD) */
+$gradient-01-bltr: linear-gradient(to top right, #9738F5 0%, #11A7ED 50%, #1EDFAD 100%);
 
 /* 小區塊也顯色：用 px 停駐點 */
 $gradient-dyn-01: linear-gradient(90deg,
@@ -407,8 +409,9 @@ $gradients: (
   gradient-01-vertical-reverse:   $gradient-01-vertical-reverse,
   gradient-02-vertical-reverse:   $gradient-02-vertical-reverse,
   gradient-dyn-01-vertical:       $gradient-dyn-01-vertical,
-  gradient-dyn-02-vertical:       $gradient-dyn-02-vertical
-  
+  gradient-dyn-02-vertical:       $gradient-dyn-02-vertical,
+  /* 左下(#9738F5) → 中(#11A7ED) → 右上(#1EDFAD) */
+  gradient-01-bltr: $gradient-01-bltr
 ) !default;
 
 /* ---------- 2) 產出工具類：背景 / 文字 / 邊框 ---------- */
