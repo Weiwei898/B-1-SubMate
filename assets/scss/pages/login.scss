@@ -37,7 +37,10 @@
     }
 }
 
-
+.next-step,
+button.next-step {
+    border-radius: 100px;
+}
 
 form button.next-step a{
     display: block;
@@ -109,4 +112,8 @@ div.saperate-line{
     background-size: contain;
     width: 32px;
     height: 32px;
+}
+
+.login-policy a.fw-bold {
+    font-size: 1rem;
 }
