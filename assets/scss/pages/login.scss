@@ -70,13 +70,13 @@ div.saperate-line{
     text-align: center;
 
     &::before {
-        content: "-----------------------------------\a0\a0\a0\a0";
+        content: "--------------------------\a0\a0\a0\a0";
         color: $neutral-700;
         font-weight: 200;
     }
 
     &::after {
-        content: "\a0\a0\a0\a0-----------------------------------";
+        content: "\a0\a0\a0\a0--------------------------";
         color: $neutral-700;
         font-weight: 200;
     }
@@ -85,11 +85,11 @@ div.saperate-line{
 @media (min-width: 993.02px) and (max-width: 1200px)  {
     div.saperate-line{
         &::before {
-            content: "-----------------------\a0\a0\a0\a0";
+            content: "---------------------\a0\a0\a0\a0";
         }
 
         &::after {
-            content: "\a0\a0\a0\a0-----------------------";
+            content: "\a0\a0\a0\a0---------------------";
         }
     }
 }
@@ -97,11 +97,11 @@ div.saperate-line{
 @media (max-width: 576px)  {
     div.saperate-line{
         &::before {
-            content: "---------------\a0\a0\a0\a0";
+            content: "--------------\a0\a0\a0\a0";
         }
 
         &::after {
-            content: "\a0\a0\a0\a0---------------";
+            content: "\a0\a0\a0\a0--------------";
         }
     }
 }
