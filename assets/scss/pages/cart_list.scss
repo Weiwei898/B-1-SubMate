@@ -36,7 +36,7 @@ a{
 }
 
 .title-logo {
-    background-image: url("../assets/images/title_item.svg");
+    background-image: url("../images/title_item.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20px;
@@ -242,7 +242,7 @@ a.next-step.btn-primary-600 {
     left: -44px; //保留2px白邊，可看的到白板  ，搭配js的 newHeight
     width: 100%;
     height: 100%;
-    background-image: url("../assets/images/roadmap_bg.svg");
+    background-image: url("../images/roadmap_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -256,7 +256,7 @@ a.next-step.btn-primary-600 {
 }
 
 .check-circle {
-    background-image: url("../assets/images/check-circle.svg");
+    background-image: url("../images/check-circle.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
