@@ -155,7 +155,7 @@ p.about-card1 {
 
     &::before {
         content: "";
-        background-image: url("../assets/images/about_Line_left.svg");
+        background-image: url("../images/about_Line_left.svg");
         background-repeat: no-repeat;
         background-size: contain;
         /* 讓圖片在容器內完整顯示 */
@@ -179,7 +179,7 @@ p.about-card2 {
 
     &::before {
         content: "";
-        background-image: url("../assets/images/about_Line_right.svg");
+        background-image: url("../images/about_Line_right.svg");
         background-repeat: no-repeat;
         background-size: contain;
         /* 讓圖片在容器內完整顯示 */
@@ -225,7 +225,7 @@ p.about-card2 {
 
 .roadmap-dot {
     //圓點背景圖片
-    background-image: url("../assets/images/roadmap-dot.svg");
+    background-image: url("../images/roadmap-dot.svg");
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -658,7 +658,7 @@ li.time06 {
 }
 
 .title-logo {
-    background-image: url("../assets/images/title_item.svg");
+    background-image: url("../images/title_item.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 20px;
@@ -784,7 +784,7 @@ a.cta-btn.btn-primary-600 {
     display: block;
     border-radius: 1000px;
     color: $neutral-0;
-
+    font-size: 1rem;
 
     &:hover,
     &:active,
