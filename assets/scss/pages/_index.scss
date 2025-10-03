@@ -74,10 +74,10 @@
 }
 
 .index-news-carousel .carousel-control-prev-icon{
-  background-image: url(../assets/icons/arrow_back.svg);
+  background-image: url(../icons/arrow_back.svg);
 }
 .index-news-carousel .carousel-control-next-icon{
-  background-image: url(../assets/icons/arrow_forward.svg);
+  background-image: url(../icons/arrow_forward.svg);
 }
 
 .index-news-carousel .carousel-control-next{
@@ -130,7 +130,7 @@
 .swiper-container .swiper-button-prev:after, 
 .swiper-container .swiper-rtl .swiper-button-next:after{
   content: "";
-  background-image: url(../assets/icons/arrow_back.svg);
+  background-image: url(../icons/arrow_back.svg);
   background-size: 100% auto;
   width: 32px;
   height: 32px;
@@ -139,7 +139,7 @@
 .swiper-container .swiper-button-next:after, 
 .swiper-container .swiper-rtl .swiper-button-prev:after{
   content: "";
-  background-image: url(../assets/icons/arrow_forward.svg);
+  background-image: url(../icons/arrow_forward.svg);
   background-size: 100% auto;
   width: 32px;
   height: 32px;
