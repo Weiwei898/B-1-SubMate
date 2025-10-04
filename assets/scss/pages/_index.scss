@@ -81,11 +81,11 @@
 }
 
 .index-news-carousel .carousel-control-next{
-  right: -200px;
+  right: -132px;
   display: none;
 }
 .index-news-carousel .carousel-control-prev{
-  left: -200px;
+  left: -132px;
   display: none;
 }
 
@@ -111,12 +111,12 @@
 
 .swiper-container .swiper-button-next,
 .swiper-container .swiper-rtl .swiper-button-prev{
-  right: -115px;
+  right: -48px;
 }
 
 .swiper-container .swiper-button-prev, 
 .swiper-container .swiper-rtl .swiper-button-next{
-  left: -115px;
+  left: -48px;
 }
 
 .swiper-container .swiper-button-prev, 
@@ -174,6 +174,7 @@
   background-color: rgba(255, 255, 255, 0.6);
   margin: 10px;
   border-radius: 24px;
+  min-height: 340px;
 }
 
 .swiper-container .hotProduct .list li,
